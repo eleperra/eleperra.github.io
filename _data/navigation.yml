@@ -7,7 +7,7 @@ main:
  # - title: "About"
  #   url: /about/
   - title: "Research"
-    url: /portfolio/
+    url: /research/
   - title: "CV"
     url: /assets/docs/elenaperra_CV_2023.pdf  
   - title: "Certificates"
