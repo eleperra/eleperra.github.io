@@ -108,30 +108,30 @@ analytics:
 
 # Site Author
 author:
-  name             : "Katerina Bosko"
+  name             : "Elena Perra"
   avatar           : "/assets/images/kbosko-color-small.jpg"
-  bio              : "From Political Science to Data Engineering"
-  location         : "San Francisco Bay Area (CA)"
+  bio              : "Postdoctoral Researcher in Development Economics"
+  location         : "University of Turin, Italy"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:kbosko@cross-validated.com
+      url: mailto:elena.perra@unito.it
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/kbosko3"
+      url: "https://twitter.com/perra_ep"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/k-bosko/"
+      url: "https://github.com/eleperra/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/k-bosko/"
+      #url: "https://linkedin.com/in/k-bosko/"
 
 # Site Footer
 # footer:
