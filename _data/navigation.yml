@@ -6,9 +6,9 @@ main:
     url: /home/
  # - title: "About"
  #   url: /about/
-  - title: "Portfolio"
+  - title: "Research"
     url: /portfolio/
-  - title: "Resume"
+  - title: "CV"
     url: /assets/docs/elenaperra_CV_2023.pdf  
   - title: "Certificates"
     url: /certificates/
