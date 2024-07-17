@@ -3,8 +3,7 @@ layout: single
 title: "Portfolio"
 permalink: /portfolio/
 header:
-    overlay_image: /assets/images/joel-filipe-small-warmer.jpg
-    caption: "Photo by [Joel Filipe](https://unsplash.com/@joelfilip) on [Unsplash](https://unsplash.com)"
+    overlay_image: /assets/images/header_prova.jpg
 author_profile: true
 classes: wide
 date: April 30, 2023
