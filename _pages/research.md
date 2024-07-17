@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Portfolio"
-permalink: /portfolio/
+title: "Research"
+permalink: /research/
 header:
     overlay_image: /assets/images/header_prova.jpg
 author_profile: true
