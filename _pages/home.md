@@ -8,13 +8,8 @@ header:
 classes: wide
 ---
 
-<figure style="width: 30%" class="align-right">
-  <img src="/assets/images/hawaii.jpg" alt="">
-</figure>
 
-
-
-I'm a Postdoctoral research in Development Economics at the University of Turin Cognetti de Martiis, Italy. I am an affiliated researcher at [UNU-MERIT university](https://www.merit.unu.edu/about-us/profile/?staff_id=4612) and at [EMANES netowork for Economic studies](https://emnes.org/about-us/fellows/). I received my PhD in Development Economics in July 2022 from the Doctoral programme jointly offered by the Universities of Trento and Florence. 
+I'm a Postdoctoral research in Development Economics at the Department of Economics and Statistics Cognetti de Martiis at the University of Turin, Italy. I am an affiliated researcher at [UNU-MERIT university](https://www.merit.unu.edu/about-us/profile/?staff_id=4612) and at [EMANES netowork for Economic studies](https://emnes.org/about-us/fellows/). I received my PhD in Development Economics in July 2022 from the Doctoral programme jointly offered by the Universities of Trento and Florence. 
 
 I’m passionate about . Since Data Engineering is at the intersection of both Data Science and Software Engineering - both fields that I love - I decided to concentrate in Data Engineering.
 
