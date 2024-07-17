@@ -14,9 +14,9 @@ classes: wide
 
 
 
-I'm a Master's student in Computer Science at Northeastern University (Silicon Valley campus), graduating in May 2023. `Cross-validated` is my personal blog to keep track of my projects and different HOWTOs related to data and tech.
+I'm a Postdoctoral research in Development Economics at the University of Turin Cognetti de Martiis, Italy. I am an affiliated researcher at [UNU-MERIT university](https://www.merit.unu.edu/about-us/profile/?staff_id=4612) and at [EMANES netowork for Economic studies](https://emnes.org/about-us/fellows/). I received my PhD in Development Economics in July 2022 from the Doctoral programme jointly offered by the Universities of Trento and Florence. 
 
-I’m passionate about Data Analytics and Data Science and recently discovered that I enjoy coding. Since Data Engineering is at the intersection of both Data Science and Software Engineering - both fields that I love - I decided to concentrate in Data Engineering.
+I’m passionate about . Since Data Engineering is at the intersection of both Data Science and Software Engineering - both fields that I love - I decided to concentrate in Data Engineering.
 
 I have strong programming skills in **Python** and currently learning **AWS, Spark, Hadoop and MapReduce**. I have solid understanding of Machine Learning and Databases (**Oracle, MongoDB, Redis**). My previous school [projects](/portfolio) also involved Node.js, Bootstrap, Java, C++.
 
