@@ -1,27 +1,14 @@
 ---
 layout: single
-title: Teaching
-permalink: /teaching/
+title: Conferences
+permalink: /conferences/
 author_profile: true
 header:
     overlay_image: /assets/images/header_prova.jpg
 classes: wide
 ---
 
-<figure style="width: 100%" class="align-center">
-  <img src="/assets/images/kbosko-communication-skills.jpg" alt="Public Speaking and Presentations">
-</figure>
-
-During my previous career in Political Science, I published over 40 analytical articles, policy briefs, research papers and presented at over 30 events in English, German, Russian and Ukrainian. I have spoken in front of different audiences - policy makers, experts, researchers, students and general interested public. I also gave interviews to German local newspapers, radio stations and online news magazines. You can find the list of my presentations and articles below. My main areas of expertise were politics and economics of Ukraine, democratization and energy policy.
-
-For almost 5 years I worked in a similar to a **Product Manager role in academic setting** - I was a Managing Editor of online analytical digest ["Ukraine-Analysen"](https://www.laender-analysen.de/ukraine-analysen/) (3500+ subscribers) with two weeks publication deadlines. As a Managing Editor, I developed high-impact content of 60+ issues. I am proud to say that digest's **subscription base grew by 35%** under my management or over 1,000 extra highly-engaging subscribers.
-
-I managed the digest during the critical time of increased international attention to Ukraine - the so called [Ukrainian Crisis 2014](https://en.wikipedia.org/wiki/Ukrainian_crisis) (Euromaidan Revolution, Annexation of Crimea, War in Donbass). "Ukraine-Analysen" provided unbiased analysis of the evolving events free of charge and was read by high-level decision makers in Germany.
-{: .text-justify}
-
-
-
-## Public Speaking
+## Conferences
 
 ### Interviews for Newspapers, Radio, TV
 - Spiegel Online, News Magazine (02/22/2016)
