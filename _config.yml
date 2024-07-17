@@ -88,7 +88,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : /assets/images/header_prova.jpg # Open Graph/Twitter default site image
+og_image                 : "/assets/images/header_prova.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -109,7 +109,7 @@ analytics:
 # Site Author
 author:
   name             : "Elena Perra"
-  avatar           : "/assets/images/kbosko-color-small.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "Postdoctoral Researcher in Development Economics"
   location         : "University of Turin, Italy"
   email            :
