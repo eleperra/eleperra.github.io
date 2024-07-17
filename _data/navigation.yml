@@ -8,11 +8,13 @@ main:
  #   url: /about/
   - title: "Research"
     url: /research/
+ # - title: "Research"
+ #    url: /research/
   - title: "CV"
     url: /assets/docs/elenaperra_CV_2023.pdf  
   - title: "Certificates"
     url: /certificates/
-  - title: "Achievements"
-    url: /achievements/
+  - title: "Teaching"
+    url: /teaching/
   - title: "Archive"
     url: /year-archive/
