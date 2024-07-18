@@ -10,6 +10,7 @@ date: April 30, 2023
 
 feature_row0-1:
   - image_path: assets/images/JDE_image.png
+   alt: "AWS app demo"
   - image_path: assets/images/cross-val-logo-v4.png
     alt: "AWS app demo"
     title: "Roads, Competition, and the Informal Sector"
