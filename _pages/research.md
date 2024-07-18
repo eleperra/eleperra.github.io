@@ -87,21 +87,20 @@ feature_row1-2:
       <div style="font-size: 11px;"> 
        Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2023)  "Can road infrastructure investments accel- erate fertility transition? Evidence from Ethiopia" 
        <br>  <br>
-       "In a series of Marketing Analytics projects, I used Online Retail II dataset to create cohorts based on monthly data, calculated retention rates and visualized them via a heatmap. Then I created RFM (Recency, Frequency, Monetary) segments, calculated RFM Score for each customer and segmented into 3 custom segments 'Top', 'Middle' and 'Low' based on the total RFM Score. Finally, I calculated the revenue-based CLV (Customer Lifetime Value) for each customer."
         </div>
-    url: "https://github.com/k-bosko/cohort_analysis"
-    btn_label: "Code for Cohort Analysis"
-    btn_class: "btn--primary"
-    url2: "https://github.com/k-bosko/RFM_analysis"
-    btn_label2: "Code for RFM Analysis"
-    btn_class: "btn--primary"
-    url3: "https://github.com/k-bosko/CLV_prediction"
-    btn_label3: "Code for CLV Prediction"
-    btn_class: "btn--primary"
-    tags:
-    - CLV
-    - Cohort Analysis
-    - RFM Analysis
+   #url: "https://github.com/k-bosko/cohort_analysis"
+   #btn_label: "Code for Cohort Analysis"
+   #btn_class: "btn--primary"
+   #url2: "https://github.com/k-bosko/RFM_analysis"
+   #btn_label2: "Code for RFM Analysis"
+   #btn_class: "btn--primary"
+   #url3: "https://github.com/k-bosko/CLV_prediction"
+   #btn_label3: "Code for CLV Prediction"
+   #btn_class: "btn--primary"
+   #tags:
+   #- CLV
+   #- Cohort Analysis
+   #- RFM Analysis
 
 feature_row1-3:
   - image_path: /assets/images/portfolio/purchase-analytics-1200.jpg
