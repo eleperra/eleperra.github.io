@@ -45,20 +45,23 @@ feature_row1-0:
         #- Convolutional Neural Network
 
 feature_row1-1:
-  - image_path: assets/images/posts/starbucks-cluster-conversion-rates.png
+  - image_path: assets/images/malawi.png
     alt: "Clusterisation results based on Conversion Rates"
-    title: "Unsupervised Machine Learning"
-    text: "In this project, I analyzed the customer behavior in the Starbucks Rewards Mobile App. After signing up for the app, customers receive promotions every few days. The task was to identify which customers are influenced by promotional offers the most and what types of offers to send them in order to maximize the revenue. I used PCA and K-Means clustering to arrive at 3 customer segments (Disinterested, BOGO, Discount) based on Average Conversion Rates and explored their demographic profiles and shopping habits."
-    url: "https://github.com/k-bosko/Starbucks_rewards"
-    btn_label: "Code + Presentation"
+    title: "Spatial Inequality during the COVID-19 pandemic in Africa, using Night-time lights data"
+    text: In this paper, we study the evolution of spatial inequality during the recent COVID-19 pandemic in  Africa and assess if there is any association between the outbreak of the health crisis, the strictness of policy restrictions and the changes observed in spatial inequality. Using remotely sensed night time lights data, we find that spatial inequality decreased after the COVID-19 outbreak. Yet, there are huge differences within and between countries. Spatial inequality decreased in Southern and Northern African countries while it increased in Central African countries}. Spatial inequality mainly decreased in countries implementing more stringent measures but also in those areas that were richer before the outbreak of the COVID-19 pandemic.
+    url: "url: "https://www.sciencedirect.com/science/article/pii/S0304387824000889"
+    #btn_label: "Code"
+    btn_class: "btn--primary""
+    #btn_label: "Code"
     btn_class: "btn--primary"
-    url2: "/Starbucks-Rewards-Program/"
-    btn_label2: "Technical Report"
-    btn_class: "btn--primary"
-    tags:
-        - Marketing
-        - Segmentation
-        - k-means clustering
+    #btn_class: "btn--primary"
+    #url2: "/Starbucks-Rewards-Program/"
+    #btn_label2: "Technical Report"
+    #btn_class: "btn--primary"
+    #tags:
+    #    - Marketing
+    #    - Segmentation
+    #    - k-means clustering
 
 feature_row1-2:
   - image_path: /assets/images/portfolio/retention_rates.png
