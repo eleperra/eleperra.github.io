@@ -214,7 +214,7 @@ feature_row5:
         - PyTorch
 ---
 
-## Projects in Computer Science
+## Publication
 
 {% include feature_row id="feature_row0-1" type="left" %}
 <a name="Gifify AWS app"></a>
