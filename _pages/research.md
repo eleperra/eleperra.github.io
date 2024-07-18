@@ -9,22 +9,22 @@ classes: wide
 date: April 30, 2023
 
 feature_row0-1:
-  - image_path: assets/gif/gifify.gif
+  - image_path: assets/gif/JDE.gif
     alt: "AWS app demo"
-    title: "Gifify App"
-    text: "I developed a Gifify app where a user can upload a video and get it processed into a gif. This is a Flask app deployed to AWS EC2 instance. The user login data is saved into DynamoDB, while the users' uploaded videos and resulting gifs are stored on S3 buckets. The video processing is implemented through a Lambda function (deployed via Docker to ECS)."
-    url: "https://github.com/k-bosko/gifify"
-    btn_label: "Code"
+    title: "Roads, Competition, and the Informal Sector"
+    text: We examine the impact of competition from better connectivity to domestic markets on formal and informal firms. Combining geolocalized information on road improvements under a large infrastructure investment programme with data on manufacturing firms in Ethiopia between 2001 and 2013, we show that an increase in competition is associated with higher labour productivity, capital-intensity, investment in physical capital and wages in the formal sector. On the contrary, there is no associated increase in labour productivity or wages in the informal sector. In fact, increased competition results in lower capital-intensity and investment, a shift in composition towards workers without primary education and a lower likelihood of operating in the informal sector. We thus highlight that the benefits of infrastructure improvement programmes may not accrue uniformly in the economy.
+    url: "https://www.sciencedirect.com/science/article/pii/S0304387824000889"
+    #btn_label: "Code"
     btn_class: "btn--primary"
-    tags:
-        - AWS
-        - Lambda
-        - S3
-        - EC2
-        - DynamoDB
-        - Flask
-        - ECS
-        - Docker
+    # tags:
+    #     - AWS
+    #     - Lambda
+    #     - S3
+    #     - EC2
+    #     - DynamoDB
+    #     - Flask
+    #     - ECS
+    #     - Docker
 
 feature_row0-2:
   - image_path: assets/gif/wumpus.gif
