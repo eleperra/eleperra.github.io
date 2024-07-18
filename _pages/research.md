@@ -85,7 +85,7 @@ feature_row1-2:
     title: "Can road infrastructure investments accelerate fertility transition? Evidence from Ethiopia"
     text: >
       <div style="font-size: 11px;"> 
-       Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2023)  "Can road infrastructure investments accel- erate fertility transition? Evidence from Ethiopia" 
+       Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2023)  "Can road infrastructure investments accelerate fertility transition? Evidence from Ethiopia" 
        <br>  <br>
         </div>
    #url: "https://github.com/k-bosko/cohort_analysis"
