@@ -32,7 +32,7 @@ feature_row1-0:
   - image_path: assets/images/artificial_map_1998.png
     alt: "Detecting System Failure poster"
     title: "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia"
-    text: This paper examines the impact of ethnic favoritism on the allocation of transportation infrastructure in Ethiopia. Analyzing road investments and ethnic composition in 5 Km² grid cells, the study finds that areas predominantly inhabited by the ruling ethnic elite receive 6.8\% more road investments and see a 7.5\% improvement in pavement quality. Investigating the staggered implementation of the Road Sector Development Program from 1997 to 2016, I explore how road construction influences local economic activity. Nighttime light intensity, indicating higher economic activity, increases by two thirds of a standard deviation in cells benefiting from new roads, with earlier investments yielding higher effects. Notably, economic benefits are more pronounced in areas where the population shares the ethnicity of the ruling elite.
+    text: This paper examines the impact of ethnic favoritism on the allocation of transportation infrastructure in Ethiopia. Analyzing road investments and ethnic composition in 5 Km² grid cells, the study finds that areas predominantly inhabited by the ruling ethnic elite receive 6.8% more road investments and see a 7.5% improvement in pavement quality. Investigating the staggered implementation of the Road Sector Development Program from 1997 to 2016, I explore how road construction influences local economic activity. Nighttime light intensity, indicating higher economic activity, increases by two thirds of a standard deviation in cells benefiting from new roads, with earlier investments yielding higher effects. Notably, economic benefits are more pronounced in areas where the population shares the ethnicity of the ruling elite.
   # url: "../assets/docs/reports/kbosko-system-failure-detection-poster.pdf"
    # btn_label: "Poster"
     #btn_class: "btn--primary"
@@ -49,7 +49,7 @@ feature_row1-1:
     alt: "Clusterisation results based on Conversion Rates"
     title: "Spatial Inequality during the COVID-19 pandemic in Africa, using Night-time lights data"
     text: In this paper, we study the evolution of spatial inequality during the recent COVID-19 pandemic in  Africa and assess if there is any association between the outbreak of the health crisis, the strictness of policy restrictions and the changes observed in spatial inequality. Using remotely sensed night time lights data, we find that spatial inequality decreased after the COVID-19 outbreak. Yet, there are huge differences within and between countries. Spatial inequality decreased in Southern and Northern African countries while it increased in Central African countries}. Spatial inequality mainly decreased in countries implementing more stringent measures but also in those areas that were richer before the outbreak of the COVID-19 pandemic.
-    url: "url: "https://www.sciencedirect.com/science/article/pii/S0304387824000889"
+    url: "https://www.sciencedirect.com/science/article/pii/S0304387824000889"
     #btn_label: "Code"
     btn_class: "btn--primary""
     #btn_label: "Code"
