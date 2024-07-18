@@ -83,7 +83,7 @@ feature_row1-2:
   - image_path: /assets/images/roads.gif
     alt: "Retention Rates"
     title: "Can road infrastructure investments accel- erate fertility transition? Evidence from Ethiopia"
-    text: text: >
+      text: >
       <div style="font-size: 11px;"> 
       Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2023)  "Can road infrastructure investments accel- erate fertility transition? Evidence from Ethiopia""
        </div>
