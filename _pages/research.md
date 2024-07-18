@@ -80,10 +80,15 @@ feature_row1-1:
     #    - k-means clustering
 
 feature_row1-2:
-  - image_path: /assets/images/portfolio/retention_rates.png
+  - image_path: /assets//images/roads.gif
     alt: "Retention Rates"
-    title: "Marketing Analytics"
-    text: "In a series of Marketing Analytics projects, I used Online Retail II dataset to create cohorts based on monthly data, calculated retention rates and visualized them via a heatmap. Then I created RFM (Recency, Frequency, Monetary) segments, calculated RFM Score for each customer and segmented into 3 custom segments 'Top', 'Middle' and 'Low' based on the total RFM Score. Finally, I calculated the revenue-based CLV (Customer Lifetime Value) for each customer."
+    title: "Can road infrastructure investments accelerate fertility transition? Evidence from Ethiopia"
+    text: >
+      <div style="font-size: 11px;"> 
+       Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2023)  "Can road infrastructure investments accel- erate fertility transition? Evidence from Ethiopia" 
+       <br>  <br>
+       "In a series of Marketing Analytics projects, I used Online Retail II dataset to create cohorts based on monthly data, calculated retention rates and visualized them via a heatmap. Then I created RFM (Recency, Frequency, Monetary) segments, calculated RFM Score for each customer and segmented into 3 custom segments 'Top', 'Middle' and 'Low' based on the total RFM Score. Finally, I calculated the revenue-based CLV (Customer Lifetime Value) for each customer."
+        </div>
     url: "https://github.com/k-bosko/cohort_analysis"
     btn_label: "Code for Cohort Analysis"
     btn_class: "btn--primary"
