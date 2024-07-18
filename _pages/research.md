@@ -80,7 +80,7 @@ feature_row1-1:
     #    - k-means clustering
 
 feature_row1-2:
-  - image_path: /assets//images/roads.gif
+  - image_path: /assets/images/roads.gif
     alt: "Retention Rates"
     title: "Can road infrastructure investments accelerate the fertility transition? Evidence from Ethiopia"
     text: >
