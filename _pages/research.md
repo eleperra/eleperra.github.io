@@ -85,7 +85,7 @@ feature_row1-2:
     title: "Can road infrastructure investments accelerate the fertility transition? Evidence from Ethiopia"
     text: >
       <div style="font-size: 11px;"> 
-       Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2023)  "Can road infrastructure investments accelerate the fertility transition? Evidence from Ethiopia" 
+       Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2024)  "Can road infrastructure investments accelerate the fertility transition? Evidence from Ethiopia" 
        <br>  <br>
         </div>
    #url: "https://github.com/k-bosko/cohort_analysis"
@@ -103,16 +103,20 @@ feature_row1-2:
    #- RFM Analysis
 
 feature_row1-3:
-  - image_path: /assets/images/portfolio/purchase-analytics-1200.jpg
+  - image_path: /assets/images/cumulative_deforestation_pipelines.gif
     alt: "Purchas Analytics results"
-    title: "Purchase Analytics"
-    text: "In this project, I analyzed purchase behavior of customers that bought 5 different brands of chocolate bars in a physical FMCG store during 2 years. In total, they made 58,693 transactions, captured through the loyalty cards they used at checkout. Based on the results of customer segmentation, I explored the segments sizes and answered the following business questions: 1. How often do people from different segments visit the store? 2. What brand do customer segments prefer on average? 3. How much revenue each customer segment brings?"
-    url: "https://github.com/k-bosko/purchase_analytics"
-    btn_label: "Code"
-    btn_class: "btn--primary"
-    tags:
-    - EDA
-    - Business Analytics
+    title: "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects"
+     text: >
+      <div style="font-size: 11px;"> 
+     Sanfilippo, M., Sileci, L. and Perra, E. (2024)  "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects."
+       <br>  <br>
+        </div>
+   # url: "https://github.com/k-bosko/purchase_analytics"
+   # btn_label: "Code"
+   # btn_class: "btn--primary"
+   # tags:
+   # - EDA
+   # - Business Analytics
 
 feature_row1-4:
   - image_path: /assets/images/portfolio/Tableau-dashboard-1200.jpg
