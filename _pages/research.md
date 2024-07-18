@@ -61,7 +61,7 @@ feature_row1-1:
     title: "Spatial Inequality during the COVID-19 pandemic in Africa, using Night-time lights data"
     text: >
       <div style="font-size: 11px;"> 
-      Martorano, B., Perra, E., and Tiberti, M., (2023) "Spatial inequality during the COVID-19 pandemic in Africa using night-time lights data",  <i> MERIT Working Papers 2023-032, United Nations University - Maastricht Economic and Social Research Institute on Innovation and Technology (MERIT). </i> 
+      Martorano, B., Perra, E., and Tiberti, M., (2023) "Spatial inequality during the COVID-19 pandemic in Africa using night-time lights data",  <i> MERIT Working Papers 2023-032, United Nations University. </i> 
       <br>  <br>
       In this paper, we study the evolution of spatial inequality during the recent COVID-19 pandemic in  Africa and assess if there is any association between the outbreak of the health crisis, the strictness of policy restrictions and the changes observed in spatial inequality. Using remotely sensed night time lights data, we find that spatial inequality decreased after the COVID-19 outbreak. Yet, there are huge differences within and between countries. Spatial inequality decreased in Southern and Northern African countries while it increased in Central African countries}. Spatial inequality mainly decreased in countries implementing more stringent measures but also in those areas that were richer before the outbreak of the COVID-19 pandemic.
        </div>
