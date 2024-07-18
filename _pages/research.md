@@ -118,49 +118,7 @@ feature_row1-3:
     #- EDA
     #- Business Analytics
 
-feature_row1-4:
-  - image_path: /assets/images/portfolio/Tableau-dashboard-1200.jpg
-    alt: "Tableau Dashboard"
-    title: "Tableau Dashboard"
-    text: "In this project, I performed data analysis to recommend short-term renting strategy for Watershed, a residential rental properties firm. To do this, I extracted relevant data from a real estate MySQL database, analyzed data in Excel to identify the best opportunities to increase revenue and maximize profits and created a Tableau dashboard to show the results of a sensitivity analysis."
-    url: "https://public.tableau.com/profile/katerina.bosko#!/vizhome/Bosko_dashboardforWatershedproperties/FinalDashboard"
-    btn_label: "Dashboard"
-    btn_class: "btn--primary"
-    tags:
-    - Tableau
-    - Excel
-    - MySQL
 
-
-feature_row3:
-  - image_path: /assets/images/portfolio/IBM_DS_platform.jpg
-    alt: "IBM data science platform"
-    title: "Content Recommendations"
-    text: "In this project, I implemented different recommendation engines for users of the IBM Watson Studio platform. <br>
-    - _Rank Based Recommendations_: recommended the most popular articles based on the highest user interactions <br>
-    - _User-User Based Collaborative Filtering_: recommended unseen articles that were viewed by most similar users <br>
-    - _Content Based Recommendations_: recommended articles based on similarity of content <br>"
-    url: "https://github.com/k-bosko/recommendations_IBM"
-    btn_label: "Code"
-    btn_class: "btn--primary"
-    tags:
-    - recommender system
-    - collaborative filtering
-
-
-feature_row5:
-  - image_path: assets/images/portfolio/deep_learning-thumb-800.jpg
-    portfolio_caption: Photo Credit [Ardon Dertat](https://towardsdatascience.com/applied-deep-learning-part-1-artificial-neural-networks-d7834f67a4f6)
-    alt: "deep learning network"
-    title: "Deep Learning"
-    text: "In this project, I have first developed code for an image classifier built with PyTorch in Jupyter Notebook, then converted it into a command line application. The application allows you to choose one of the pretrained architectures, specify different hyperparameters (learning rate, hidden layers, epochs) and use either GPU or CPU for training. I also implemented saving the checkpoints so that you can continue training if stopped. Image Classifier predicts 102 flower categories. "
-    url: "https://github.com/k-bosko/image_classifier"
-    btn_label: "Code"
-    btn_class: "btn--primary"
-    tags:
-        - deep-learning
-        - transfer-learning
-        - PyTorch
 ---
 
 ## Publications
@@ -168,22 +126,21 @@ feature_row5:
 {% include feature_row id="feature_row0-1" type="left" %}
 <a name="Gifify AWS app"></a>
 
-## Research Pipeline
+## WP: Research Pipeline
 
 &nbsp;
 <a name="Signal-Processing">
 {% include feature_row id="feature_row1-0" type="left" %}
 {% include feature_row id="feature_row1-1" type="left" %}
 <a name="Marketing-Analytics"></a>
+
+## Work in Progress
+
+&nbsp;
 {% include feature_row id="feature_row1-2" type="left" %}
 <a name="Purchase-Analytics"></a>
 {% include feature_row id="feature_row1-3" type="left" %}
-<a name="Tableau-Dashboard"></a>
-{% include feature_row id="feature_row1-4" type="left" %}
-<!-- <a name="Digital-Marketing"></a>
-{% include feature_row id="feature_row4" type="left" %} -->
-<a name="Recommender-System"></a>
-{% include feature_row id="feature_row3" type="left" %}
+
 
 
 
