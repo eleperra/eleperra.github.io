@@ -103,9 +103,9 @@ feature_row1-2:
    #- RFM Analysis
 
 feature_row1-3:
-  - image_path: /assets/images/cumulative_deforestation_pipelines.gif
+  - image_path: /assets/images/deforestation.gif
     alt: "Purchas Analytics results"
-    title: "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects""
+    title: "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects"
     text: >
       <div style="font-size: 11px;"> 
       Sanfilippo, M., Sileci, L. and Perra, E. (2024)  "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects."
