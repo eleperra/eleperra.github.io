@@ -49,9 +49,9 @@ feature_row1-1:
     alt: "Clusterisation results based on Conversion Rates"
     title: "Spatial Inequality during the COVID-19 pandemic in Africa, using Night-time lights data"
     text: In this paper, we study the evolution of spatial inequality during the recent COVID-19 pandemic in  Africa and assess if there is any association between the outbreak of the health crisis, the strictness of policy restrictions and the changes observed in spatial inequality. Using remotely sensed night time lights data, we find that spatial inequality decreased after the COVID-19 outbreak. Yet, there are huge differences within and between countries. Spatial inequality decreased in Southern and Northern African countries while it increased in Central African countries}. Spatial inequality mainly decreased in countries implementing more stringent measures but also in those areas that were richer before the outbreak of the COVID-19 pandemic.
-    url: "https://www.sciencedirect.com/science/article/pii/S0304387824000889"
+    #url: "https://www.sciencedirect.com/science/article/pii/S0304387824000889"
     #btn_label: "Code"
-    btn_class: "btn--primary""
+    #btn_class: "btn--primary""
     #btn_label: "Code"
     btn_class: "btn--primary"
     #btn_class: "btn--primary"
@@ -139,7 +139,7 @@ feature_row5:
         - PyTorch
 ---
 
-## Publication
+## Publications
 
 {% include feature_row id="feature_row0-1" type="left" %}
 <a name="Gifify AWS app"></a>
@@ -149,8 +149,6 @@ feature_row5:
 &nbsp;
 <a name="Signal-Processing">
 {% include feature_row id="feature_row1-0" type="left" %}
-{% include feature_row id="feature_row5" type="left" %}
-<a name="Deep-Learning">
 {% include feature_row id="feature_row1-1" type="left" %}
 <a name="Marketing-Analytics"></a>
 {% include feature_row id="feature_row1-2" type="left" %}
