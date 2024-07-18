@@ -11,7 +11,7 @@ date: April 30, 2023
 feature_row0-1:
  # - image_path: assets/images/JDE_image.png
   #  alt: "AWS app demo"
-   - image_path: <img src="assets/images/JDE_image.png" alt="AWS app demo" style="width:       200px; height: auto; float: right; margin-left: 20px;" />
+   - image_path: assets/images/JDE_image.png" 
     alt: "AWS app demo"
     title: "Roads, Competition, and the Informal Sector"
     text: We examine the impact of competition from better connectivity to domestic markets on formal and informal firms. Combining geolocalized information on road improvements under a large infrastructure investment programme with data on manufacturing firms in Ethiopia between 2001 and 2013, we show that an increase in competition is associated with higher labour productivity, capital-intensity, investment in physical capital and wages in the formal sector. On the contrary, there is no associated increase in labour productivity or wages in the informal sector. In fact, increased competition results in lower capital-intensity and investment, a shift in composition towards workers without primary education and a lower likelihood of operating in the informal sector. We thus highlight that the benefits of infrastructure improvement programmes may not accrue uniformly in the economy.
@@ -143,7 +143,7 @@ feature_row5:
 
 ## Publications
 
-{% include feature_row id="feature_row0-1" type="left" %}
+{% include feature_row id="feature_row0-1" type="left" style="width: 200px; height: auto; float: right; margin-left: 20px" %}
 <a name="Gifify AWS app"></a>
 
 ## Research Pipeline
