@@ -13,7 +13,7 @@ feature_row0-1:
     alt: "AWS app demo"
     title: "Roads, Competition, and the Informal Sector"
     text: >
-      <div style="font-size: 12px;"> 
+      <div style="font-size: 11px;"> 
       Perra E., Sanfilippo, M. Sundaram, A. (2024) "Roads, Competition, and the Informal Sector",  <i> Journal of Development Economics </i>
        <br>  <br>
       We examine the impact of competition from better connectivity to domestic markets on formal and informal firms. Combining geolocalized information on road improvements under a large infrastructure investment programme with data on manufacturing firms in Ethiopia between 2001 and 2013, we show that an increase in competition is associated with higher labour productivity, capital-intensity, investment in physical capital and wages in the formal sector. On the contrary, there is no associated increase in labour productivity or wages in the informal sector. In fact, increased competition results in lower capital-intensity and investment, a shift in composition towards workers without primary education and a lower likelihood of operating in the informal sector. We thus highlight that the benefits of infrastructure improvement programmes may not accrue uniformly in the economy. 
@@ -39,7 +39,9 @@ feature_row1-0:
     alt: "Detecting System Failure poster"
     title: "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia"
     text: >
-      <div style="font-size: 12px;">  
+      <div style="font-size: 11px;"> 
+      Perra E. "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia",  <i> Working Papers N. 01/2022 - Economics, Universita' degli Studi di Firenze </i>
+       <br>  <br>
       This paper examines the impact of ethnic favoritism on the allocation of transportation infrastructure in Ethiopia. Analyzing road investments and ethnic composition in 5 Km² grid cells, the study finds that areas predominantly inhabited by the ruling ethnic elite receive 6.8% more road investments and see a 7.5% improvement in pavement quality. Investigating the staggered implementation of the Road Sector Development Program from 1997 to 2016, I explore how road construction influences local economic activity. Nighttime light intensity, indicating higher economic activity, increases by two thirds of a standard deviation in cells benefiting from new roads, with earlier investments yielding higher effects. Notably, economic benefits are more pronounced in areas where the population shares the ethnicity of the ruling elite.
         </div>
   # url: "../assets/docs/reports/kbosko-system-failure-detection-poster.pdf"
