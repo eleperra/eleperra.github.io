@@ -80,45 +80,79 @@ feature_row1-1:
     #    - k-means clustering
 
 feature_row1-2:
-  - image_path: /assets/images/roads.gif
+  - image_path: /assets/images/portfolio/retention_rates.png
     alt: "Retention Rates"
-    title: "Can road infrastructure investments accel- erate fertility transition? Evidence from Ethiopia"
-      text: >
-      <div style="font-size: 11px;"> 
-      Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2023)  "Can road infrastructure investments accel- erate fertility transition? Evidence from Ethiopia""
-       </div>
-    #  <br>  <br>
-   # url: "https://github.com/k-bosko/cohort_analysis"
-   # btn_label: "Code for Cohort Analysis"
-   # btn_class: "btn--primary"
-   # url2: "https://github.com/k-bosko/RFM_analysis"
-   # btn_label2: "Code for RFM Analysis"
-   # btn_class: "btn--primary"
-   # url3: "https://github.com/k-bosko/CLV_prediction"
-   # btn_label3: "Code for CLV Prediction"
-   # btn_class: "btn--primary"
-   # tags:
-   # - CLV
-   # - Cohort Analysis
-   # - RFM Analysis
+    title: "Marketing Analytics"
+    text: "In a series of Marketing Analytics projects, I used Online Retail II dataset to create cohorts based on monthly data, calculated retention rates and visualized them via a heatmap. Then I created RFM (Recency, Frequency, Monetary) segments, calculated RFM Score for each customer and segmented into 3 custom segments 'Top', 'Middle' and 'Low' based on the total RFM Score. Finally, I calculated the revenue-based CLV (Customer Lifetime Value) for each customer."
+    url: "https://github.com/k-bosko/cohort_analysis"
+    btn_label: "Code for Cohort Analysis"
+    btn_class: "btn--primary"
+    url2: "https://github.com/k-bosko/RFM_analysis"
+    btn_label2: "Code for RFM Analysis"
+    btn_class: "btn--primary"
+    url3: "https://github.com/k-bosko/CLV_prediction"
+    btn_label3: "Code for CLV Prediction"
+    btn_class: "btn--primary"
+    tags:
+    - CLV
+    - Cohort Analysis
+    - RFM Analysis
 
 feature_row1-3:
-  - image_path: /assets/images/cumulative_deforestation_pipelines.gif
+  - image_path: /assets/images/portfolio/purchase-analytics-1200.jpg
+    alt: "Purchas Analytics results"
+    title: "Purchase Analytics"
+    text: "In this project, I analyzed purchase behavior of customers that bought 5 different brands of chocolate bars in a physical FMCG store during 2 years. In total, they made 58,693 transactions, captured through the loyalty cards they used at checkout. Based on the results of customer segmentation, I explored the segments sizes and answered the following business questions: 1. How often do people from different segments visit the store? 2. What brand do customer segments prefer on average? 3. How much revenue each customer segment brings?"
+    url: "https://github.com/k-bosko/purchase_analytics"
+    btn_label: "Code"
+    btn_class: "btn--primary"
+    tags:
+    - EDA
+    - Business Analytics
+
+feature_row1-4:
+  - image_path: /assets/images/portfolio/Tableau-dashboard-1200.jpg
     alt: "Tableau Dashboard"
-    title: "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects"
-    text:  >
-      <div style="font-size: 11px;"> 
-      Sanfilippo, M., Sileci, L. and Perra, E. (2024)  "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects.""
-       </div>
-    #url: "https://public.tableau.com/profile/katerina.bosko#!/vizhome/Bosko_dashboardforWatershedproperties/FinalDashboard"
-    #btn_label: "Dashboard"
-    #btn_class: "btn--primary"
-    #tags:
-    #- Tableau
-    #- Excel
-    #- MySQL
+    title: "Tableau Dashboard"
+    text: "In this project, I performed data analysis to recommend short-term renting strategy for Watershed, a residential rental properties firm. To do this, I extracted relevant data from a real estate MySQL database, analyzed data in Excel to identify the best opportunities to increase revenue and maximize profits and created a Tableau dashboard to show the results of a sensitivity analysis."
+    url: "https://public.tableau.com/profile/katerina.bosko#!/vizhome/Bosko_dashboardforWatershedproperties/FinalDashboard"
+    btn_label: "Dashboard"
+    btn_class: "btn--primary"
+    tags:
+    - Tableau
+    - Excel
+    - MySQL
 
 
+feature_row3:
+  - image_path: /assets/images/portfolio/IBM_DS_platform.jpg
+    alt: "IBM data science platform"
+    title: "Content Recommendations"
+    text: "In this project, I implemented different recommendation engines for users of the IBM Watson Studio platform. <br>
+    - _Rank Based Recommendations_: recommended the most popular articles based on the highest user interactions <br>
+    - _User-User Based Collaborative Filtering_: recommended unseen articles that were viewed by most similar users <br>
+    - _Content Based Recommendations_: recommended articles based on similarity of content <br>"
+    url: "https://github.com/k-bosko/recommendations_IBM"
+    btn_label: "Code"
+    btn_class: "btn--primary"
+    tags:
+    - recommender system
+    - collaborative filtering
+
+
+feature_row5:
+  - image_path: assets/images/portfolio/deep_learning-thumb-800.jpg
+    portfolio_caption: Photo Credit [Ardon Dertat](https://towardsdatascience.com/applied-deep-learning-part-1-artificial-neural-networks-d7834f67a4f6)
+    alt: "deep learning network"
+    title: "Deep Learning"
+    text: "In this project, I have first developed code for an image classifier built with PyTorch in Jupyter Notebook, then converted it into a command line application. The application allows you to choose one of the pretrained architectures, specify different hyperparameters (learning rate, hidden layers, epochs) and use either GPU or CPU for training. I also implemented saving the checkpoints so that you can continue training if stopped. Image Classifier predicts 102 flower categories. "
+    url: "https://github.com/k-bosko/image_classifier"
+    btn_label: "Code"
+    btn_class: "btn--primary"
+    tags:
+        - deep-learning
+        - transfer-learning
+        - PyTorch
 ---
 
 ## Publications
@@ -126,20 +160,22 @@ feature_row1-3:
 {% include feature_row id="feature_row0-1" type="left" %}
 <a name="Gifify AWS app"></a>
 
-## WP : Research Pipeline 
+## Research Pipeline
 
 &nbsp;
 <a name="Signal-Processing">
 {% include feature_row id="feature_row1-0" type="left" %}
 {% include feature_row id="feature_row1-1" type="left" %}
 <a name="Marketing-Analytics"></a>
-
-## Work in progress
-
-&nbsp;
 {% include feature_row id="feature_row1-2" type="left" %}
 <a name="Purchase-Analytics"></a>
 {% include feature_row id="feature_row1-3" type="left" %}
 <a name="Tableau-Dashboard"></a>
+{% include feature_row id="feature_row1-4" type="left" %}
+<!-- <a name="Digital-Marketing"></a>
+{% include feature_row id="feature_row4" type="left" %} -->
+<a name="Recommender-System"></a>
+{% include feature_row id="feature_row3" type="left" %}
+
 
 
