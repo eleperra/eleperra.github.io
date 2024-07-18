@@ -14,7 +14,10 @@ feature_row0-1:
     title: "Roads, Competition, and the Informal Sector"
     text: >
       <div style="font-size: 12px;"> 
-      We examine the impact of competition from better connectivity to domestic markets on formal and informal firms. Combining geolocalized information on road improvements under a large infrastructure investment programme with data on manufacturing firms in Ethiopia between 2001 and 2013, we show that an increase in competition is associated with higher labour productivity, capital-intensity, investment in physical capital and wages in the formal sector. On the contrary, there is no associated increase in labour productivity or wages in the informal sector. In fact, increased competition results in lower capital-intensity and investment, a shift in composition towards workers without primary education and a lower likelihood of operating in the informal sector. We thus highlight that the benefits of infrastructure improvement programmes may not accrue uniformly in the economy.
+      Perra E., Sanfilippo, M. Sundaram, A. (2024) "Roads, Competition, and the Informal Sector", JDE <i> Journal of Development Economics </i>
+       <br>
+      We examine the impact of competition from better connectivity to domestic markets on formal and informal firms. Combining geolocalized information on road improvements under a large infrastructure investment programme with data on manufacturing firms in Ethiopia between 2001 and 2013, we show that an increase in competition is associated with higher labour productivity, capital-intensity, investment in physical capital and wages in the formal sector. On the contrary, there is no associated increase in labour productivity or wages in the informal sector. In fact, increased competition results in lower capital-intensity and investment, a shift in composition towards workers without primary education and a lower likelihood of operating in the informal sector. We thus highlight that the benefits of infrastructure improvement programmes may not accrue uniformly in the economy. 
+      <br>
        </div>
     url: "https://www.sciencedirect.com/science/article/pii/S0304387824000889"
     #btn_label: "Code"
