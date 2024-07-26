@@ -8,15 +8,10 @@ header:
 classes: wide
 ---
 
-### Amazon DynamoDB for Serverless Architectures | AWS training and certification [<i class="fas fa-link" aria-hidden="true"></i>](../assets/docs/certificates/kbosko_AWS_DynamoDB_certificate.pdf)
-- How Amazon DynamoDB Works
-- Operating Amazon DynamoDB
-- Design Considerations
-- Serverless Architecture Patterns
-
-Projects:
-- DynamoDB: How to Get Started [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/DynamoDB)
-- Gifify app
+### Economic Development: Theories, Models, Problems (Master's Degree in International Sciences) [<i class="fas fa-link" aria-hidden="true"></i>](https://www.didattica-cps.unito.it/do/storicocorsi.pl/Show?_id=le8r_2324)
+- Interpretation of data and understanding of the most frequently used methods in applied analyses
+- Methods of analysis and research
+- Formulating a research question
 
 ----------------------------------------
 
