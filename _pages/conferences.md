@@ -23,7 +23,6 @@ classes: wide
 
 - 20th EUDN PhD Workshop on Development Economics
 - 15th North American Meeting of the Urban Economics Association [<i class="fas fa-link" aria-hidden="true"></i>](https://urbaneconomics.org/meetings/uea2021/)
-- Development Economists Meeting – DevEconMeet 2021 [<i class="fas fa-link" aria-hidden="true"></i>](https://www.phd-delos.unifi.it/vp-261-development-economists-meeting-SasCa PhD Conference in Economics 2021
-deveconmeet.html)
+- Development Economists Meeting – DevEconMeet 2021[<i class="fas fa-link" aria-hidden="true"></i>](https://www.phd-delos.unifi.it/vp-261-development-economists-meeting-deveconmeet.html)
 - SASCA Ph.D. Conference in Economics [<i class="fas fa-link" aria-hidden="true"></i>](https://sites.google.com/view/sassari-venice-phd-conference/2021-edition#)
 -EMNES Annual Conference [<i class="fas fa-link" aria-hidden="true"></i>](https://emnes.org/wp-content/uploads/2019/06/speakers.pdf)
