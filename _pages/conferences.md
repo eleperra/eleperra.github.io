@@ -4,7 +4,7 @@ title: Conferences
 permalink: /conferences/
 author_profile: true
 header:
-    overlay_image: /assets/images/headelorenr_prova.jpg
+    overlay_image: /assets/images/header_prova.jpg
 classes: wide
 ---
 
