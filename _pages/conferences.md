@@ -25,4 +25,5 @@ classes: wide
 - 15th North American Meeting of the Urban Economics Association (online) [<i class="fas fa-link" aria-hidden="true"></i>](https://urbaneconomics.org/meetings/uea2021/)
 - Development Economists Meeting – DevEconMeet 2021 (Florence, Italy) [<i class="fas fa-link" aria-hidden="true"></i>](https://www.phd-delos.unifi.it/vp-261-development-economists-meeting-deveconmeet.html)
 - SASCA Ph.D. Conference in Economics (Alghero, Italy) [<i class="fas fa-link" aria-hidden="true"></i>](https://sites.google.com/view/sassari-venice-phd-conference/2021-edition#)
+- Urban Economic Association (UEA) PhD Student Workshop (elevator speech, online) [<i class="fas fa-link" aria-hidden="true"></i>](https://urbaneconomics.org/workshops/summerschool2021/program.pdf)
 - EMNES Annual Conference (Bruxelles, Belgium) [<i class="fas fa-link" aria-hidden="true"></i>](https://emnes.org/wp-content/uploads/2019/06/speakers.pdf)
