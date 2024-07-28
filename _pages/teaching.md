@@ -18,7 +18,7 @@ classes: wide
 
 ----------------------------------------
 
-### Spring Term 2022: Economic Policy of Sustainable Development (Undergraduate in Sustainable Development, Cooperation, and Conflict Management) [<i class="fas fa-link" aria-hidden="true"></i>](https://unifi.coursecatalogue.cineca.it/insegnamenti/2022/22125_B243-21-21_85133/2021/22126/1417?coorte=2021)
+### Spring Term 2022: Economic Policy of Sustainable Development (Undergraduate Degree in Sustainable Development, Cooperation, and Conflict Management) [<i class="fas fa-link" aria-hidden="true"></i>](https://unifi.coursecatalogue.cineca.it/insegnamenti/2022/22125_B243-21-21_85133/2021/22126/1417?coorte=2021)
 
 - Introduction to the essential concepts of economic policy in developing countries within the context of the local environment
 
@@ -34,7 +34,7 @@ Lessons:
 
 ----------------------------------------
 
-### Winter Lesson 2021: Sustainable Management of Resources and cultural Heritage for local development: Empowering higher Education in Africa (Master Students) [<i class="fas fa-link" aria-hidden="true"></i>](https://www.masterafrica.polimi.it)
+### Winter Term 2021: Guest Lecture in Sustainable Management of Resources and cultural Heritage for local development: Empowering higher Education in Africa (Master Students) [<i class="fas fa-link" aria-hidden="true"></i>](https://www.masterafrica.polimi.it)
 
 - Role of infrastructure to promote development and structural transformation processes
 
