@@ -16,7 +16,7 @@ classes: wide
 - XXXV SIEP Conference 2023 [<i class="fas fa-link" aria-hidden="true"></i>](http://www.siepweb.it/siep/wp/en/en/xxxv-siep-conference-2023/)
 - Nordic Conference in Development Economics, NCDE 2023 [<i class="fas fa-link" aria-hidden="true"></i>](https://www.gu.se/en/school-business-economics-law/economics/our-research/research-areas/development-economics/nordic-conference-in-development-economics-ncde-2023)
 - Jobs and Development[<i class="fas fa-link" aria-hidden="true"></i>](https://jobsanddevelopmentconference.org/conferences-list/2022-conference-2/)
-- UNU-Merit Internal Conference
+- 5th UNU-MERIT Internal Conference [<i class="fas fa-link" aria-hidden="true"></i>](https://www.merit.unu.edu/events/event-abstract/?id=2216)
 - The Bank Al-Maghrib [<i class="fas fa-link" aria-hidden="true"></i>](8https://www.imf.org/en/News/Seminars/Conferences/2022/06/23/transformational-recovery-seizing-opportunities-from-the-crisis)
 
 ### 2019-2022
