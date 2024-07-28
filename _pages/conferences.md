@@ -13,7 +13,7 @@ classes: wide
 ### 2022-2023
 
 - 2022-23 Andrea Vaona Award [<i class="fas fa-link" aria-hidden="true"></i>](https://www.univrmagazine.it/2023/09/19/premio-vaona/)
-- XXXV SIEP Conference 2023 [<i class="fas fa-link" aria-hidden="true"></i>]http://www.siepweb.it/siep/wp/en/en/xxxv-siep-conference-2023/)
+- XXXV SIEP Conference 2023 [<i class="fas fa-link" aria-hidden="true"></i>](http://www.siepweb.it/siep/wp/en/en/xxxv-siep-conference-2023/)
 - Nordic Conference in Development Economics, NCDE 2023 [<i class="fas fa-link" aria-hidden="true"></i>](https://www.gu.se/en/school-business-economics-law/economics/our-research/research-areas/development-economics/nordic-conference-in-development-economics-ncde-2023)
 - Jobs and Development[<i class="fas fa-link" aria-hidden="true"></i>](https://jobsanddevelopmentconference.org/conferences-list/2022-conference-2/)
 - UNU-Merit Internal Conference
@@ -27,5 +27,3 @@ classes: wide
 deveconmeet.html)
 - SASCA Ph.D. Conference in Economics [<i class="fas fa-link" aria-hidden="true"></i>](https://sites.google.com/view/sassari-venice-phd-conference/2021-edition#)
 -EMNES Annual Conference [<i class="fas fa-link" aria-hidden="true"></i>](https://emnes.org/wp-content/uploads/2019/06/speakers.pdf)
-
--
