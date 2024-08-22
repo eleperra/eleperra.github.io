@@ -13,7 +13,7 @@ I'm a Postdoctoral researcher in Development Economics at the Department of Econ
 
 I am passionate about Development Economics and Economic Geography. Throughout my PhD and recent research positions, I have focused on Sub-Saharan Africa, with a particular emphasis on the socio-economic impacts of infrastructural investments in Ethiopia.  I am deeply interested in the intersection of environmental and development economics, exploring how environmental degradation influences structural transformation and the adaptive strategies of local communities. My work integrates advanced geospatial and remote sensing techniques to address key challenges in sustainable development.
 
-Thank you for visiting, and feel free to explore my research and ongoing projects. Feel free to [contact me](mailto: elena.perra@unito.it) if you like to connect.
+Thank you for visiting, and feel free to explore my research and ongoing projects. If you like to connect [contact me](mailto: elena.perra@unito.it).
 {: .text-justify}
 
 
