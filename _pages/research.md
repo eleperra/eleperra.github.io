@@ -85,7 +85,7 @@ feature_row1-2:
     title: "The Fertility Highway: How Road Investments Shape Childbearing in Ethiopia"
     text: >
       <div style="font-size: 11px;"> 
-       Hiluf Abay, Mehari, Tiberti, L. and Perra, E. (2023)  "Can road infrastructure investments accelerate the fertility transition? Evidence from Ethiopia" 
+       Hiluf Abay, Mehari,  Perra, E. and Tiberti, L. (2023)  "The Fertility Highway: How Road Investments Shape Childbearing in Ethiopia" 
        <br>  <br>
        This paper examines the impact of road infrastructure expansion on fertility decisions in Ethiopia. Using geo-referenced road network data combined with the Demographic and Health Surveys (DHS), we investigate fertility outcomes of road improvements under the Road Sector Development Program (RSDP). Employing instrumental variable and dynamic difference-in-differences methods, we find that road improvements significantly reduce fertility rates. A 10 kilometre increase in road length lowers completed fertility by 0.54 children and decreases the annual probability of childbirth by 1.3 percentage points, corresponding to a 12% decrease. Roads also improve child survival, delay women’s first marriage and childbirth, and boost female employment and schooling.
         </div>
