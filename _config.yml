@@ -109,7 +109,7 @@ analytics:
 # Site Author
 author:
   name             : "Elena Perra"
-  avatar           : "/assets/images/profile_rectangular.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "Postdoctoral Researcher in Development Economics"
   location         : "University of Turin, Italy"
   email            :
@@ -132,7 +132,7 @@ author:
     #- label: "Linkedin"
     #  icon: "fab fa-fw fa-linkedin"
     - label: "Google Scholar"
-      icon: "ai ai-google-scholae"
+      icon: "fab fa-fw  fa-google-scholar"
       url: "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AC6lMd8zcWY-PNf4jvIx1Lib31VryBBOGpdhSwTHLkj02VQgKYLTEsmz_HbIFE9sodv7QGlJXRw9X6fxun6MuQ&user=6knm70QAAAAJ"
       
       #url: "https://linkedin.com/in/k-bosko/"
