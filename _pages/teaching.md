@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 author_profile: true
 header:
-    overlay_image: /assets/images/header_prova.jpg
+    overlay_image: /assets/images/header_prova.png
 classes: wide
 ---
 
