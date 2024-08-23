@@ -132,7 +132,7 @@ author:
     #- label: "Linkedin"
     #  icon: "fab fa-fw fa-linkedin"
     - label: "Google Scholar"
-      icon: "fab fa-fw  fa-google-scholar"
+      icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AC6lMd8zcWY-PNf4jvIx1Lib31VryBBOGpdhSwTHLkj02VQgKYLTEsmz_HbIFE9sodv7QGlJXRw9X6fxun6MuQ&user=6knm70QAAAAJ"
       
       #url: "https://linkedin.com/in/k-bosko/"
