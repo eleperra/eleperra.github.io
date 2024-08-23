@@ -3,7 +3,7 @@ layout: single
 title: "Research"
 permalink: /research/
 header:
-    overlay_image: /assets/images/header_prova.jpg
+    overlay_image: /assets/images/header_prova.png
 author_profile: true
 classes: wide
 date: April 30, 2023
