@@ -58,12 +58,12 @@ feature_row1-0:
 feature_row1-1:
   - image_path: assets/images/malawi.png
     alt: "Clusterisation results based on Conversion Rates"
-    title: "Spatial Inequality during the COVID-19 pandemic in Africa, using Night-time lights data"
+    title: "Beyond Data Gaps: Tracking Spatial Inequality in Africa via Nighttime Lights"
     text: >
       <div style="font-size: 11px;"> 
       Martorano, B., Perra, E., and Tiberti, M., (2023) "Spatial inequality during the COVID-19 pandemic in Africa using night-time lights data",  <i> MERIT Working Papers 2023-032, United Nations University. </i> 
       <br>  <br>
-      In this paper, we study the evolution of spatial inequality during the recent COVID-19 pandemic in  Africa and assess if there is any association between the outbreak of the health crisis, the strictness of policy restrictions and the changes observed in spatial inequality. Using remotely sensed night time lights data, we find that spatial inequality decreased after the COVID-19 outbreak. Yet, there are huge differences within and between countries. Spatial inequality decreased in Southern and Northern African countries while it increased in Central African countries}. Spatial inequality mainly decreased in countries implementing more stringent measures but also in those areas that were richer before the outbreak of the COVID-19 pandemic.
+      This paper offers a robust approach to timely measure the distributional impact of crises at a sub-national level, offering a valuable alternative to traditional economic measures that are often delayed or incomplete. Using the COVID-19 pandemic as an illustrative case study, we first employ satellite-derived nighttime light data to measure real-time economic disparities at the local level across African countries. We show that national measures of inequality mask substantial heterogeneity at sub-national level. We then combine this information with the novel Causal-ARIMA (Causal-AutoRegressive Integrated Moving Average) estimator to assess if there is any relationship between the outbreak of the health crisis, the strictness of policy restrictions and the changes observed in spatial inequality. The results indicate that wealthier and more industrialized areas implementing more stringent containment measures experienced more pronounced reductions in inequality. The study underscores the potential of our empirical strategy for tracking inequality dynamics during times of crisis, offering a valuable tool for policymakers when canonical data sources are inaccessible.
        </div>
     #url: "https://www.sciencedirect.com/science/article/pii/S0304387824000889"
     #btn_label: "Code"
@@ -106,10 +106,10 @@ feature_row1-2:
 feature_row1-3:
   - image_path: /assets/images/deforestation.gif
     alt: "Purchas Analytics results"
-    title: "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects"
+    title: "Crude Chain Reaction: From Oil to Soil, the Nigerian Case"
     text: >
       <div style="font-size: 11px;"> 
-      Sanfilippo, M., Sileci, L. and Perra, E. (2024)  "Oil Spills, Agriculture and Deforestation in Nigeria. Chain of Effects."
+      Sanfilippo, M.,  Perra, E. and Sileci, L.  (2024)  "Crude Chain Reaction: From Oil to Soil, the Nigerian Case"
        <br>  <br>
         </div>
     #url: "https://github.com/k-bosko/purchase_analytics"
