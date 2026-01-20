@@ -110,13 +110,13 @@ analytics:
 author:
   name             : "Elena Perra"
   avatar           : "/assets/images/profile.jpeg"
-  bio              : "Postdoctoral Researcher in Development Economics"
-  location         : "University of Turin, Italy"
+  bio              : "Assistant Professor"
+  location         : "University of Barcelona, Spain"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:elena.perra@unito.it
+      url: mailto:elena.perra@ub.edu
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
