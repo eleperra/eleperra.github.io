@@ -1,84 +1,70 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
-@charset "utf-8";
-
-/* Importa la skin del _config.yml e poi il tema */
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'air' }}";
-@import "minimal-mistakes";
-
 /* ==============================
-   Elena Perra — MAP BACKGROUND
+   Elena Perra — Cartographic skin
+   (loaded AFTER the theme)
    ============================== */
 
 :root{
-  /* Base “map-room” (fredda, pulita) */
-  --ep-bg: #e9f0fb;
-  --ep-surface: rgba(255,255,255,.86);
-  --ep-text: #0c1522;
-  --ep-muted: #4a5b70;
-  --ep-border: rgba(12,21,34,.14);
+  /* Colori più “convincenti”: map-room moderna */
+  --ep-bg: #e6eef8;                 /* blu carta */
+  --ep-surface: rgba(255,255,255,.84);
+  --ep-ink: rgba(8, 24, 52, .14);   /* inchiostro linee */
+  --ep-ink2: rgba(8, 24, 52, .08);
+  --ep-text: #0b1524;
 
-  /* Link: scuri + visited più scuri */
-  --ep-link: #061a38;
-  --ep-link-hover: #0a2a5f;
-  --ep-link-visited: #020812;
+  /* Link scuri + visited più scuri */
+  --ep-link: #061a3a;
+  --ep-link-visited: #020913;
+  --ep-link-hover: #0b2f66;
 
-  /* Tinte “cartografia” */
-  --ep-ink: rgba(10, 24, 48, .10);
-  --ep-ink-strong: rgba(10, 24, 48, .15);
+  --ep-border: rgba(11, 21, 36, .14);
 }
 
-/* Sfondo base */
+/* Background “cartina geografica” (reticolo + isoipse + costa) */
 html, body{
-  background-color: var(--ep-bg);
+  background-color: var(--ep-bg) !important;
   color: var(--ep-text);
 }
 
-/* “Cartina geografica” come overlay SVG (reticolo + contour + coste stilizzate) */
 body{
+  /* SVG tile: grid + contour + coastline */
   background-image:
-    /* un leggero “glow” da map-room */
-    radial-gradient(1100px 760px at 14% 12%, rgba(14, 55, 120, .14), transparent 62%),
-    radial-gradient(980px 700px at 88% 16%, rgba(16, 110, 115, .12), transparent 60%),
-
-    /* SVG pattern mappa */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'%3E%3Crect width='900' height='900' fill='none'/%3E%3Cg fill='none' stroke='%230a1830' stroke-opacity='.10'%3E%3C!-- reticolo lat/long --%3E%3Cg stroke-width='1'%3E%3Cpath d='M0 90H900M0 180H900M0 270H900M0 360H900M0 450H900M0 540H900M0 630H900M0 720H900M0 810H900'/%3E%3Cpath d='M90 0V900M180 0V900M270 0V900M360 0V900M450 0V900M540 0V900M630 0V900M720 0V900M810 0V900'/%3E%3C/g%3E%3C!-- contour lines --%3E%3Cg stroke-width='1'%3E%3Cpath d='M-40 240c140-120 280-120 420 0s280 120 520 0'/%3E%3Cpath d='M-60 310c170-140 320-140 490 0s320 140 570 0'/%3E%3Cpath d='M-40 380c140-120 280-120 420 0s280 120 520 0'/%3E%3Cpath d='M-60 450c170-140 320-140 490 0s320 140 570 0'/%3E%3Cpath d='M-40 520c140-120 280-120 420 0s280 120 520 0'/%3E%3Cpath d='M-60 590c170-140 320-140 490 0s320 140 570 0'/%3E%3C/g%3E%3C!-- “coastlines” stilizzate --%3E%3Cg stroke-opacity='.14' stroke-width='2'%3E%3Cpath d='M120 640c40-40 90-55 150-40 55 13 78 2 110-28 38-35 82-44 130-20 54 27 85 22 130-10 34-24 86-28 130 10 40 35 70 40 110 18'/%3E%3Cpath d='M160 200c60-45 120-55 185-28 56 24 88 18 130-16 48-40 108-42 168-10 50 27 86 26 130 0 42-25 92-24 127 8'/%3E%3C/g%3E%3C/g%3E%3C!-- micro-dots --%3E%3Cg fill='%230a1830' fill-opacity='.07'%3E%3Ccircle cx='70' cy='70' r='1'/%3E%3Ccircle cx='140' cy='120' r='1'/%3E%3Ccircle cx='240' cy='90' r='1'/%3E%3Ccircle cx='360' cy='140' r='1'/%3E%3Ccircle cx='520' cy='110' r='1'/%3E%3Ccircle cx='680' cy='150' r='1'/%3E%3Ccircle cx='820' cy='120' r='1'/%3E%3Ccircle cx='110' cy='760' r='1'/%3E%3Ccircle cx='260' cy='820' r='1'/%3E%3Ccircle cx='430' cy='780' r='1'/%3E%3Ccircle cx='610' cy='830' r='1'/%3E%3Ccircle cx='780' cy='790' r='1'/%3E%3C/g%3E%3C/svg%3E");
-
+    radial-gradient(1100px 760px at 12% 10%, rgba(20,70,140,.16), transparent 62%),
+    radial-gradient(980px 700px at 88% 14%, rgba(16,120,120,.12), transparent 60%),
+    url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='900'%20height='900'%20viewBox='0%200%20900%20900'%3E%3Crect%20width='900'%20height='900'%20fill='none'/%3E%3Cg%20fill='none'%20stroke='%23081834'%3E%3C!--%20minor%20grid%20--%3E%3Cg%20stroke-opacity='.06'%20stroke-width='1'%3E%3Cpath%20d='M0%2025H900M0%2050H900M0%2075H900M0%20100H900M0%20125H900M0%20150H900M0%20175H900M0%20200H900M0%20225H900M0%20250H900M0%20275H900M0%20300H900M0%20325H900M0%20350H900M0%20375H900M0%20400H900M0%20425H900M0%20450H900M0%20475H900M0%20500H900M0%20525H900M0%20550H900M0%20575H900M0%20600H900M0%20625H900M0%20650H900M0%20675H900M0%20700H900M0%20725H900M0%20750H900M0%20775H900M0%20800H900M0%20825H900M0%20850H900M0%20875H900'/%3E%3Cpath%20d='M25%200V900M50%200V900M75%200V900M100%200V900M125%200V900M150%200V900M175%200V900M200%200V900M225%200V900M250%200V900M275%200V900M300%200V900M325%200V900M350%200V900M375%200V900M400%200V900M425%200V900M450%200V900M475%200V900M500%200V900M525%200V900M550%200V900M575%200V900M600%200V900M625%200V900M650%200V900M675%200V900M700%200V900M725%200V900M750%200V900M775%200V900M800%200V900M825%200V900M850%200V900M875%200V900'/%3E%3C/g%3E%3C!--%20major%20grid%20--%3E%3Cg%20stroke-opacity='.12'%20stroke-width='1.2'%3E%3Cpath%20d='M0%20100H900M0%20200H900M0%20300H900M0%20400H900M0%20500H900M0%20600H900M0%20700H900M0%20800H900'/%3E%3Cpath%20d='M100%200V900M200%200V900M300%200V900M400%200V900M500%200V900M600%200V900M700%200V900M800%200V900'/%3E%3C/g%3E%3C!--%20contours%20--%3E%3Cg%20stroke-opacity='.12'%20stroke-width='1.1'%3E%3Cpath%20d='M-60%20240c180-150%20360-150%20540%200s360%20150%20600%200'/%3E%3Cpath%20d='M-80%20310c210-175%20420-175%20630%200s420%20175%20700%200'/%3E%3Cpath%20d='M-60%20380c180-150%20360-150%20540%200s360%20150%20600%200'/%3E%3Cpath%20d='M-80%20450c210-175%20420-175%20630%200s420%20175%20700%200'/%3E%3Cpath%20d='M-60%20520c180-150%20360-150%20540%200s360%20150%20600%200'/%3E%3Cpath%20d='M-80%20590c210-175%20420-175%20630%200s420%20175%20700%200'/%3E%3C/g%3E%3C!--%20coastline%20(stylized)%20--%3E%3Cg%20stroke-opacity='.18'%20stroke-width='2.2'%3E%3Cpath%20d='M110%20635c55-55%20120-75%20200-55%2075%2018%20110%205%20155-35%2050-44%20115-55%20185-20%2078%2039%20118%2033%20185-14%2048-34%20118-40%20175%2010%2052%2046%2090%2052%20150%2026'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: auto, auto, 900px 900px;
   background-attachment: fixed;
 }
 
-/* Contenuto su “card” per staccare dal pattern */
+/* Fai “staccare” il contenuto ma lascia vedere la mappa sotto */
 .page__content,
 .sidebar__right,
 .archive__item{
-  background: var(--ep-surface);
-  border: 1px solid var(--ep-border);
+  background: var(--ep-surface) !important;
+  border: 1px solid var(--ep-border) !important;
   border-radius: 18px;
-  box-shadow: 0 18px 44px rgba(12,21,34,.10);
+  box-shadow: 0 18px 44px rgba(11,21,36,.10);
 }
 
-/* Masthead un po’ più “map-room” */
+/* Navbar/masthead un filo più “map-room” */
 .masthead{
-  background: linear-gradient(90deg, rgba(14,55,120,.18), rgba(16,110,115,.12), rgba(160,75,50,.10));
-  border-bottom: 1px solid var(--ep-border);
+  background: linear-gradient(90deg, rgba(20,70,140,.18), rgba(16,120,120,.12), rgba(160,75,50,.10)) !important;
+  border-bottom: 1px solid var(--ep-border) !important;
 }
-.greedy-nav{ background: transparent; }
+.greedy-nav{ background: transparent !important; }
 
-/* LINK: sempre scuri + visited ancora più scuri (forzato) */
+/* Link: sempre scuri, visited più scuri */
 a{ color: var(--ep-link) !important; }
 a:hover, a:focus{ color: var(--ep-link-hover) !important; }
 a:visited{ color: var(--ep-link-visited) !important; }
 
-/* Avatar: SEMPRE nitido (forzato contro qualsiasi filtro del tema/custom) */
+/* Avatar: SEMPRE nitido (se lo vedi “sfocato”, era CSS) */
 .author__avatar img,
-img.avatar,
-img[alt="Elena Perra"]{
+img.avatar{
   filter: none !important;
   -webkit-filter: none !important;
   transform: none !important;
   opacity: 1 !important;
+  image-rendering: auto;
 }
+
