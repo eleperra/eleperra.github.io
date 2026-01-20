@@ -9,36 +9,38 @@
 @import "minimal-mistakes";
 
 /* =====================================================
-   Elena Perra — Cartographic background (NO images)
-   Solo pattern generato via CSS: griglia + isoipse + shade
-   Link sempre scuri + visited più scuri
-   Avatar sempre nitido
+   Elena Perra — Warm Atlas (NO images)
+   Niente celeste/bianco: greige + avorio + inchiostro scuro
+   Pattern cartografico: griglia + isoipse (solo gradienti)
+   Link scuri + visited più scuri
+   Avatar sempre nitido (forzato)
    ===================================================== */
 
 :root{
-  /* Base: “cool paper” elegante (niente sabbia) */
-  --ep-bg: #e7effb;
-  --ep-text: #0b1524;
-  --ep-muted: #4a5b70;
+  /* Base “carta” calda (no azzurri) */
+  --ep-bg: #f2eee6;            /* greige caldo */
+  --ep-text: #141b24;          /* quasi-inchiostro */
+  --ep-muted: #5a6675;
 
-  /* Card/superfici (lascia intravedere il pattern sotto) */
-  --ep-surface: rgba(255,255,255,.86);
-  --ep-border: rgba(11, 21, 36, .14);
+  /* Superfici (meno bianco puro) */
+  --ep-surface: rgba(250, 246, 238, .88);
+  --ep-border: rgba(20, 27, 36, .16);
 
-  /* Link: scuri, visited ancora più scuri */
-  --ep-link: #061a3a;
-  --ep-link-hover: #0b2f66;
-  --ep-link-visited: #020913;
+  /* Link: scuri */
+  --ep-link: #1a2230;
+  --ep-link-hover: #0f1a28;
+  --ep-link-visited: #070c12;
 
-  /* Inchiostro cartografico */
-  --ep-ink-major: rgba(8, 20, 44, .12); /* griglia grande */
-  --ep-ink-minor: rgba(8, 20, 44, .06); /* griglia piccola */
-  --ep-ink-cont1: rgba(8, 20, 44, .08); /* isoipse 1 */
-  --ep-ink-cont2: rgba(8, 20, 44, .06); /* isoipse 2 */
+  /* “Inchiostro” pattern */
+  --ep-ink-major: rgba(20, 27, 36, .14); /* griglia grande */
+  --ep-ink-minor: rgba(20, 27, 36, .07); /* griglia piccola */
+  --ep-ink-cont1: rgba(20, 27, 36, .09); /* isoipse 1 */
+  --ep-ink-cont2: rgba(20, 27, 36, .07); /* isoipse 2 */
 
-  /* “Hillshade” / glow */
-  --ep-shade-navy: rgba(14, 55, 120, .18);
-  --ep-shade-teal: rgba(16, 120, 120, .12);
+  /* Ombreggiature calde (non celesti) */
+  --ep-shade-amber: rgba(176, 122, 48, .14); /* ambra */
+  --ep-shade-olive: rgba(70, 92, 72, .10);   /* oliva */
+  --ep-shade-ink: rgba(26, 34, 48, .08);     /* inchiostro soft */
 }
 
 /* Base */
@@ -53,24 +55,25 @@ html, body{
    =========================== */
 body{
   background-image:
-    /* Hillshade / glow elegante */
-    radial-gradient(1200px 820px at 12% 10%, var(--ep-shade-navy), transparent 62%),
-    radial-gradient(1050px 760px at 88% 14%, var(--ep-shade-teal), transparent 60%),
+    /* glow caldo “map-room” */
+    radial-gradient(1200px 820px at 10% 12%, var(--ep-shade-amber), transparent 62%),
+    radial-gradient(1050px 760px at 90% 16%, var(--ep-shade-olive), transparent 60%),
+    radial-gradient(820px 520px at 50% 98%, var(--ep-shade-ink), transparent 58%),
 
-    /* Reticolo MAJOR (stile lat/long) */
+    /* Reticolo MAJOR */
     repeating-linear-gradient(
       0deg,
       var(--ep-ink-major) 0px,
       var(--ep-ink-major) 1px,
       transparent 1px,
-      transparent 160px
+      transparent 170px
     ),
     repeating-linear-gradient(
       90deg,
       var(--ep-ink-major) 0px,
       var(--ep-ink-major) 1px,
       transparent 1px,
-      transparent 160px
+      transparent 170px
     ),
 
     /* Reticolo MINOR */
@@ -79,43 +82,44 @@ body{
       var(--ep-ink-minor) 0px,
       var(--ep-ink-minor) 1px,
       transparent 1px,
-      transparent 40px
+      transparent 42px
     ),
     repeating-linear-gradient(
       90deg,
       var(--ep-ink-minor) 0px,
       var(--ep-ink-minor) 1px,
       transparent 1px,
-      transparent 40px
+      transparent 42px
     ),
 
-    /* Isoipse (contour lines) — centro 1 */
+    /* Isoipse (contour) — centro 1 */
     repeating-radial-gradient(
-      circle at 28% 36%,
+      circle at 30% 36%,
       transparent 0px,
-      transparent 14px,
-      var(--ep-ink-cont1) 14px,
-      var(--ep-ink-cont1) 15px,
       transparent 15px,
-      transparent 30px
+      var(--ep-ink-cont1) 15px,
+      var(--ep-ink-cont1) 16px,
+      transparent 16px,
+      transparent 32px
     ),
 
-    /* Isoipse — centro 2 (per spezzare la “perfezione”) */
+    /* Isoipse — centro 2 (variazione) */
     repeating-radial-gradient(
       circle at 72% 62%,
       transparent 0px,
-      transparent 18px,
-      var(--ep-ink-cont2) 18px,
-      var(--ep-ink-cont2) 19px,
       transparent 19px,
-      transparent 38px
+      var(--ep-ink-cont2) 19px,
+      var(--ep-ink-cont2) 20px,
+      transparent 20px,
+      transparent 40px
     );
 
   background-attachment: fixed;
 }
 
 /* ===========================
-   CONTENUTO SU “VETRO CARTA”
+   CONTENUTO SU “CARTA”
+   (non bianco puro)
    =========================== */
 .page__content,
 .sidebar__right,
@@ -123,19 +127,19 @@ body{
   background: var(--ep-surface) !important;
   border: 1px solid var(--ep-border) !important;
   border-radius: 18px;
-  box-shadow: 0 18px 44px rgba(11, 21, 36, .10);
+  box-shadow: 0 18px 44px rgba(20, 27, 36, .10);
 }
 
-/* Un filo più respiro */
+/* Respiro */
 .page__content{ padding: 1.15rem; }
 
-/* Masthead con sfumatura coerente */
+/* Masthead: banda sobria calda */
 .masthead{
   background: linear-gradient(
     90deg,
-    rgba(14, 55, 120, .18),
-    rgba(16, 120, 120, .12),
-    rgba(160, 75, 50, .08)
+    rgba(176, 122, 48, .16),
+    rgba(70, 92, 72, .12),
+    rgba(26, 34, 48, .10)
   ) !important;
   border-bottom: 1px solid var(--ep-border) !important;
 }
@@ -157,52 +161,54 @@ a:visited{
   color: var(--ep-link-visited) !important;
 }
 
-/* Titoli un filo più editorial */
+/* Headings un filo più editorial */
 .page__content h2{
   border-bottom: 1px solid var(--ep-border);
   padding-bottom: .25rem;
-  letter-spacing: -0.01em;
 }
 
 /* Blockquote “field note” */
 .page__content blockquote{
-  background: rgba(255,255,255,.78);
-  border-left: 6px solid rgba(16,120,120,.80);
+  background: rgba(250, 246, 238, .86);
+  border-left: 6px solid rgba(70, 92, 72, .80);
   border-radius: 14px;
-  box-shadow: 0 14px 34px rgba(11,21,36,.09);
+  box-shadow: 0 14px 34px rgba(20, 27, 36, .09);
 }
 
-/* Bottoni coerenti */
+/* Bottoni coerenti (caldi e sobri) */
 .btn, .btn--primary{
-  background: rgba(16,120,120,.95);
+  background: rgba(70, 92, 72, .95);
   border-color: transparent;
   border-radius: 999px;
 }
 .btn--info{
-  background: rgba(14,55,120,.95);
+  background: rgba(26, 34, 48, .95);
   border-radius: 999px;
 }
 .btn--warning{
-  background: rgba(160,75,50,.92);
+  background: rgba(176, 122, 48, .92);
   border-radius: 999px;
 }
 
 /* Footer */
 .page__footer{
-  background: rgba(255,255,255,.70);
+  background: rgba(250, 246, 238, .78);
   border-top: 1px solid var(--ep-border);
 }
 .page__footer, .page__footer a{ color: var(--ep-muted) !important; }
-.page__footer a:hover{ color: rgba(16,120,120,.95) !important; }
+.page__footer a:hover{ color: rgba(70, 92, 72, .95) !important; }
 
 /* ===========================
-   AVATAR: sempre a fuoco
+   AVATAR: sempre NITIDO
+   (se è sfocato, è un filtro da qualche CSS: qui lo annulliamo)
    =========================== */
 .author__avatar img,
-img.avatar{
+img.avatar,
+img[alt="Elena Perra"],
+img[src*="profile"]{
   filter: none !important;
   -webkit-filter: none !important;
   transform: none !important;
   opacity: 1 !important;
-  image-rendering: auto;
+  image-rendering: auto !important;
 }
