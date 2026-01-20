@@ -13,7 +13,7 @@ classes: wide
 ### 2024-2025
 
 - Nordic Conference in Development Economics, NCDE 2025 (Oslo, Norway)  [<i class="fas fa-link" aria-hidden="true"></i>](https://www.efdinitiative.org/events/nordic-conference-development-economics-ncde-2025)
-- Invited seminar at Center for Studies and Research on International Development, CERDI [<i class="fas fa-link" aria-hidden="true"></i>](University of Clermont Auvergne, France) (https://cerdi.uca.fr/version-francaise/actualites/elena-perra-university-of-turin#/admin)
+- Invited seminar at Center for Studies and Research on International Development, CERDI (University of Clermont Auvergne, France) [<i class="fas fa-link" aria-hidden="true"></i>](https://cerdi.uca.fr/version-francaise/actualites/elena-perra-university-of-turin#/admin)
 - Seminar Series in Economics and Statistics at the University of Torino  (Turin, Italy) [<i class="fas fa-link" aria-hidden="true"></i>](https://www.est.unito.it/do/home.pl/View?doc=Lunch_Seminars.html)
 - Postdoc/RTD Seminars Collegio Carlo Alberto (Turin, Italy) [<i class="fas fa-link" aria-hidden="true"></i>](https://www.carloalberto.org/event/martina-dattilo-university-of-turin-and-elena-perra-university-of-turin/)
 
