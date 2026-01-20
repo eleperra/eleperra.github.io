@@ -43,7 +43,7 @@
   --ep-ink-cont1: rgba(20, 27, 36, .09); /* isoipse 1 */
   --ep-ink-cont2: rgba(20, 27, 36, .07); /* isoipse 2 */
 
-  /* Ombreggiature calde (non celesti) */
+  /* Ombreggiature calde */
   --ep-shade-amber: rgba(176, 122, 48, .14); /* ambra */
   --ep-shade-olive: rgba(70, 92, 72, .10);   /* oliva */
   --ep-shade-ink: rgba(26, 34, 48, .08);     /* inchiostro soft */
@@ -131,7 +131,6 @@ body{
 
 /* ===========================
    CONTENUTO SU “CARTA”
-   (non bianco puro)
    =========================== */
 .page__content,
 .sidebar__right,
@@ -158,8 +157,7 @@ body{
 .greedy-nav{ background: transparent !important; }
 
 /* ===========================
-   LINK: scuri + visited più scuri
-   + underline coerente (niente celeste)
+   LINK + UNDERLINE (icone incluse)
    =========================== */
 a{
   color: var(--ep-link) !important;
@@ -168,7 +166,7 @@ a{
   text-decoration-color: var(--ep-underline) !important;
 }
 
-/* il tema a volte “finge” underline con box-shadow azzurrino */
+/* elimina underline “finto” celeste del tema */
 a,
 .author__urls a,
 .page__content a,
@@ -191,7 +189,7 @@ a:visited{
   text-decoration-color: rgba(20, 27, 36, .70) !important;
 }
 
-/* Specifico per le icone social in sidebar */
+/* specifico per le icone social in sidebar */
 .author__urls a,
 .author__urls a:visited{
   color: var(--ep-link) !important;
@@ -205,13 +203,13 @@ a:visited{
   text-decoration-color: var(--ep-underline-active) !important;
 }
 
-/* Titoli più editorial */
+/* Titoli */
 .page__content h2{
   border-bottom: 1px solid var(--ep-border);
   padding-bottom: .25rem;
 }
 
-/* Blockquote “field note” */
+/* Blockquote */
 .page__content blockquote{
   background: rgba(250, 246, 238, .86);
   border-left: 6px solid rgba(70, 92, 72, .80);
@@ -244,7 +242,6 @@ a.btn:active{
   transform: translateY(0);
 }
 
-/* Varianti del tema */
 .btn--primary{
   background: var(--ep-btn-olive) !important;
   color: var(--ep-btn-text) !important;
@@ -295,7 +292,7 @@ a.read-more:active{
 
 /* ===========================
    AVATAR: sempre NITIDO
-   (annulla qualsiasi blur/blur-up/lazyload)
+   (annulla blur/blur-up/lazyload)
    =========================== */
 .author__avatar img,
 .author__avatar img.lazyload,
@@ -304,7 +301,6 @@ a.read-more:active{
 .author__avatar img.is-loaded,
 .sidebar .author__avatar img,
 img.avatar,
-img[alt="Elena Perra"],
 img[src*="profile"]{
   filter: none !important;
   -webkit-filter: none !important;
@@ -313,7 +309,6 @@ img[src*="profile"]{
   image-rendering: auto !important;
 }
 
-/* Se ci fosse un overlay sul contenitore avatar, annullalo */
 .author__avatar::after,
 .author__avatar a::after{
   content: none !important;
