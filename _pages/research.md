@@ -40,20 +40,23 @@ feature_row1-0:
     title: "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia"
     text: >
       <div style="font-size: 11px;"> 
-      Perra E. (2024) "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia", WP version <i> Working Papers N. 01/2022 - Economics, Universita' degli Studi di Firenze </i>
+      Perra E. (2026) "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia", WP version <i> Journal of Comparative Economics </i>
        <br>  <br>
-      This paper examines the impact of ethnic favoritism on the allocation of transportation infrastructure in Ethiopia. Analyzing road investments and ethnic composition in 5 Km² grid cells, the study finds that areas predominantly inhabited by the ruling ethnic elite receive 6.8% more road investments and see a 7.5% improvement in pavement quality. Investigating the staggered implementation of the Road Sector Development Program from 1997 to 2016, I explore how road construction influences local economic activity. Nighttime light intensity, indicating higher economic activity, increases by two thirds of a standard deviation in cells benefiting from new roads, with earlier investments yielding higher effects. Notably, economic benefits are more pronounced in areas where the population shares the ethnicity of the ruling elite.
-        </div>
-  # url: "../assets/docs/reports/kbosko-system-failure-detection-poster.pdf"
-   # btn_label: "Poster"
-    #btn_class: "btn--primary"
-  #  url2: "../assets/docs/reports/kbosko-system-failure-detection-presentation.pdf"
-  #  btn_label2: "Presentation"
-   # btn_class: "btn--primary"
-   # tags:
-        #- Time Series
-        #- Signal Processing
-        #- Convolutional Neural Network
+This paper investigates the role of ethnic favoritism in the long run allocation of road infrastructure in Ethiopia. I construct a 5 km grid cell panel by merging road network data from the late 1960s to 2016 with high resolution maps of local ethnic composition. Using a quasi-experimental empirical design, the study finds that cells where the local majority shares the ethnicity with the ruling elite receive 8.7 percent additional road investments and see a 13.8 improvement in road surface quality than otherwise comparable non co-ethnic cells. Exploiting the phased rollout of the Road Sector Development Program between 1997 and 2016, I also document that new roads raise night lights intensity by 0.27 standard deviations in cells benefiting from the program and by 0.51 standard deviations in co-ethnic areas, with larger effects for earlier investments. These findings suggest that ethnic alignment and the availability of large public funds jointly shape the placement of road infrastructure, influencing local economic dynamics.      
+      <br> <br>
+       </div>
+    url: "https://www.sciencedirect.com/science/article/pii/S0147596725001003"
+    #btn_label: "Code"
+    btn_class: "btn--primary"
+    # tags:
+    #     - AWS
+    #     - Lambda
+    #     - S3
+    #     - EC2
+    #     - DynamoDB
+    #     - Flask
+    #     - ECS
+    #     - Docker
 
 feature_row1-1:
   - image_path: assets/images/malawi.png
@@ -85,7 +88,7 @@ feature_row1-2:
     title: "The Fertility Highway: How Road Investments Shape Childbearing in Ethiopia"
     text: >
       <div style="font-size: 11px;"> 
-       Hiluf Abay, M.,  Perra, E. and Tiberti, L. (2023)  "The Fertility Highway: How Road Investments Shape Childbearing in Ethiopia" 
+       Hiluf Abay, M.,  Perra, E. and Tiberti, L. (2026)  "The Fertility Highway: How Road Investments Shape Childbearing in Ethiopia" 
        <br>  <br>
        This paper examines the impact of road infrastructure expansion on fertility decisions in Ethiopia. Using geo-referenced road network data combined with the Demographic and Health Surveys (DHS), we investigate fertility outcomes of road improvements under the Road Sector Development Program (RSDP). Employing instrumental variable and dynamic difference-in-differences methods, we find that road improvements significantly reduce fertility rates. A 10 kilometre increase in road length lowers completed fertility by 0.54 children and decreases the annual probability of childbirth by 1.3 percentage points, corresponding to a 12% decrease. Roads also improve child survival, delay women’s first marriage and childbirth, and boost female employment and schooling.
         </div>
@@ -106,10 +109,10 @@ feature_row1-2:
 feature_row1-3:
   - image_path: /assets/images/deforestation.gif
     alt: "Purchas Analytics results"
-    title: "Crude Chain Reaction: From Oil to Soil, the Nigerian Case"
+    title: "Oil Spills, Water Networks and Local Economic Development"
     text: >
       <div style="font-size: 11px;"> 
-      Sanfilippo, M.,  Perra, E. and Sileci, L.  (2024)  "Crude Chain Reaction: From Oil to Soil, the Nigerian Case"
+      Sanfilippo, M.,  Perra, E. and Sileci, L.  (2026)  "Oil Spills, Water Networks and Local Economic Development"
        <br>  <br>
         </div>
     #url: "https://github.com/k-bosko/purchase_analytics"
