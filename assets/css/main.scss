@@ -2,168 +2,160 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@charset "utf-8";
+
+/* Importa la skin scelta nel _config.yml (air, dark, etc.) */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'air' }}";
 @import "minimal-mistakes";
 
 /* =========================================
-   Elena Perra — Cartographic edition
-   Più “map room”, meno sabbia. Link più scuri.
+   Elena Perra — Cartographic (cool paper)
+   Più “map room”, meno sabbia
+   Link più scuri
    ========================================= */
 
 :root{
-  /* Base (più fredda, meno sabbia) */
-  --ep-bg: #f4f7fb;          /* carta fredda, pulita */
-  --ep-surface: #ffffff;     /* cards/box */
-  --ep-text: #141c27;        /* blu-notte soft */
-  --ep-muted: #566579;       /* testo secondario */
-  --ep-border: rgba(20,28,39,.12);
+  /* Base: carta fredda, pulita */
+  --ep-bg: #eef3f9;
+  --ep-surface: rgba(255,255,255,.86);
+  --ep-text: #0f1722;
+  --ep-muted: #4c5a6b;
+  --ep-border: rgba(15,23,34,.14);
 
-  /* Accenti cartografici */
-  --ep-accent: #1f5a5a;      /* teal profondo */
-  --ep-accent-2: #a14b32;    /* rame/terracotta sobria */
-  --ep-accent-3: #163a6b;    /* blu cartografico */
+  /* Accenti: cartografici e sobri */
+  --ep-navy: #0b2446;     /* link scuri */
+  --ep-navy-2: #06162c;   /* hover ancora più scuro */
+  --ep-teal: #1a5b66;     /* accento */
+  --ep-rust: #9a4a33;     /* rame/terracotta */
 
-  /* Link (più scuri) */
-  --ep-link: #0f2f57;        /* navy scuro */
-  --ep-link-hover: #071c33;  /* ancora più scuro */
+  /* Pattern intensity (puoi aumentare se vuoi più “mappa”) */
+  --ep-grid-a: rgba(15,23,34,.055);
+  --ep-grid-b: rgba(15,23,34,.035);
+  --ep-contour: rgba(15,23,34,.05);
 }
 
+/* Sfondo: griglia lat/long + contour più evidenti ma eleganti */
 html, body{
   background-color: var(--ep-bg);
   color: var(--ep-text);
 }
 
-/* Background “cartografico”:
-   - leggero hillshade
-   - griglia lat/long molto discreta
-   - linee di livello sottili
-*/
 body{
   background-image:
-    /* Hillshade morbido */
-    radial-gradient(1000px 700px at 15% 10%, rgba(22,58,107,.10), transparent 60%),
-    radial-gradient(900px 650px at 85% 15%, rgba(31,90,90,.08), transparent 58%),
-    radial-gradient(800px 520px at 55% 95%, rgba(161,75,50,.06), transparent 55%),
+    /* hillshade morbido */
+    radial-gradient(1100px 750px at 12% 8%, rgba(11,36,70,.12), transparent 62%),
+    radial-gradient(950px 680px at 88% 12%, rgba(26,91,102,.10), transparent 60%),
 
-    /* Griglia (lat/long) */
+    /* griglia principale (ogni 64px) */
     repeating-linear-gradient(
       0deg,
-      rgba(20,28,39,.035) 0px,
-      rgba(20,28,39,.035) 1px,
+      var(--ep-grid-a) 0px,
+      var(--ep-grid-a) 1px,
       transparent 1px,
-      transparent 40px
+      transparent 64px
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(20,28,39,.028) 0px,
-      rgba(20,28,39,.028) 1px,
+      var(--ep-grid-a) 0px,
+      var(--ep-grid-a) 1px,
       transparent 1px,
-      transparent 40px
+      transparent 64px
     ),
 
-    /* Linee di livello (contour) */
-    repeating-radial-gradient(
-      circle at 30% 35%,
-      rgba(20,28,39,.030) 0px,
-      rgba(20,28,39,.030) 1px,
+    /* griglia secondaria (ogni 16px) */
+    repeating-linear-gradient(
+      0deg,
+      var(--ep-grid-b) 0px,
+      var(--ep-grid-b) 1px,
       transparent 1px,
-      transparent 18px
+      transparent 16px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--ep-grid-b) 0px,
+      var(--ep-grid-b) 1px,
+      transparent 1px,
+      transparent 16px
+    ),
+
+    /* contour (topo lines) */
+    repeating-radial-gradient(
+      circle at 28% 38%,
+      var(--ep-contour) 0px,
+      var(--ep-contour) 1px,
+      transparent 1px,
+      transparent 22px
     );
 
   background-attachment: fixed;
 }
 
-/* Link più scuri + sottolineatura pulita */
+/* Link più scuri (come volevi) */
 a{
-  color: var(--ep-link);
-  text-decoration-thickness: .10em;
+  color: var(--ep-navy);
+  text-decoration-thickness: .11em;
   text-underline-offset: .18em;
 }
 a:hover{
-  color: var(--ep-link-hover);
+  color: var(--ep-navy-2);
 }
 
-/* Masthead più “map room” */
+/* Masthead: “map room band” */
 .masthead{
-  background: linear-gradient(
-    90deg,
-    rgba(22,58,107,.12),
-    rgba(31,90,90,.10),
-    rgba(161,75,50,.08)
-  );
+  background:
+    linear-gradient(90deg, rgba(11,36,70,.16), rgba(26,91,102,.12), rgba(154,74,51,.10));
   border-bottom: 1px solid var(--ep-border);
 }
-.greedy-nav{
+
+/* Contenuto su “vetro carta” per staccare bene dal pattern */
+.initial-content,
+.page,
+.archive,
+.sidebar,
+.page__footer{
   background: transparent;
 }
-.greedy-nav a.site-title,
-.greedy-nav a{
-  color: var(--ep-text);
-}
-.greedy-nav a:hover{
-  color: var(--ep-accent);
-}
 
-/* Cards / box più editorial */
-.page__content .notice,
-.page__content .notice--primary,
-.page__content .notice--info,
-.page__content .notice--warning,
-.page__content .notice--success{
+.page__content,
+.sidebar__right,
+.archive__item{
   background: var(--ep-surface);
   border: 1px solid var(--ep-border);
-  border-left: 6px solid var(--ep-accent);
-  border-radius: 14px;
-  box-shadow: 0 10px 26px rgba(20,28,39,.05);
+  border-radius: 16px;
+  box-shadow: 0 14px 34px rgba(15,23,34,.08);
 }
 
-/* Blockquote “nota di campo” */
-.page__content blockquote{
-  background: rgba(255,255,255,.72);
-  border-left: 6px solid var(--ep-accent-2);
-  border-radius: 14px;
-  padding: 1rem 1.1rem;
-  box-shadow: 0 10px 26px rgba(20,28,39,.05);
+/* Spaziatura interna per farlo “editorial” */
+.page__content{
+  padding: 1.2rem;
 }
 
-/* Titoli più puliti */
+/* Titoli con un tocco “atlante” */
 .page__content h2{
   border-bottom: 1px solid var(--ep-border);
   padding-bottom: .25rem;
 }
 
-/* Bottoni coerenti */
-.btn, .btn--primary{
-  background: var(--ep-accent);
-  border-color: rgba(0,0,0,0);
-  border-radius: 999px;
-}
-.btn:hover, .btn--primary:hover{
-  filter: brightness(0.95);
-}
-.btn--info{
-  background: var(--ep-accent-3);
-  border-radius: 999px;
-}
-.btn--warning{
-  background: var(--ep-accent-2);
-  border-radius: 999px;
+/* Blockquote: nota di campo */
+.page__content blockquote{
+  background: rgba(255,255,255,.75);
+  border-left: 6px solid var(--ep-teal);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(15,23,34,.07);
 }
 
-/* Code blocks discreti */
-pre, code{ border-radius: 12px; }
-pre{
-  border: 1px solid var(--ep-border);
-  box-shadow: 0 10px 26px rgba(20,28,39,.05);
+/* Bottoni coerenti */
+.btn, .btn--primary{
+  background: var(--ep-teal);
+  border-color: transparent;
+  border-radius: 999px;
 }
+.btn--warning{ background: var(--ep-rust); border-radius: 999px; }
 
 /* Footer sobrio */
 .page__footer{
-  background: rgba(255,255,255,.68);
+  background: rgba(255,255,255,.65);
   border-top: 1px solid var(--ep-border);
 }
-.page__footer, .page__footer a{
-  color: var(--ep-muted);
-}
-.page__footer a:hover{
-  color: var(--ep-accent);
-}
+.page__footer, .page__footer a{ color: var(--ep-muted); }
+.page__footer a:hover{ color: var(--ep-teal); }
