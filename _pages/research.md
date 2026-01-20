@@ -37,23 +37,16 @@ feature_row0-1:
 feature_row1-0:
   - image_path: assets/images/artificial_map_1998.png
     alt: "Detecting System Failure poster"
-    title: "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia"
+    title: "Road to division: Ethnic favoritism and road infrastructure in Ethiopia"
     text: >
       <div style="font-size: 11px;"> 
-      Perra E. (2024) "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia", WP version <i> Working Papers N. 01/2022 - Economics, Universita' degli Studi di Firenze </i>
+      Perra E. (2026) "Road to division: Ethnic favoritism and road infrastructure in Ethiopia", <i>Journal of Comparative Economics</i> (Available online 9 January 2026)
        <br>  <br>
-      This paper examines the impact of ethnic favoritism on the allocation of transportation infrastructure in Ethiopia. Analyzing road investments and ethnic composition in 5 Km² grid cells, the study finds that areas predominantly inhabited by the ruling ethnic elite receive 6.8% more road investments and see a 7.5% improvement in pavement quality. Investigating the staggered implementation of the Road Sector Development Program from 1997 to 2016, I explore how road construction influences local economic activity. Nighttime light intensity, indicating higher economic activity, increases by two thirds of a standard deviation in cells benefiting from new roads, with earlier investments yielding higher effects. Notably, economic benefits are more pronounced in areas where the population shares the ethnicity of the ruling elite.
-        </div>
-  # url: "../assets/docs/reports/kbosko-system-failure-detection-poster.pdf"
-   # btn_label: "Poster"
-    #btn_class: "btn--primary"
-  #  url2: "../assets/docs/reports/kbosko-system-failure-detection-presentation.pdf"
-  #  btn_label2: "Presentation"
-   # btn_class: "btn--primary"
-   # tags:
-        #- Time Series
-        #- Signal Processing
-        #- Convolutional Neural Network
+      This paper investigates the role of ethnic favoritism in the long run allocation of road infrastructure in Ethiopia. I construct a 5 km grid cell panel by merging road network data from the late 1960s to 2016 with high resolution maps of local ethnic composition. Using a quasi-experimental empirical design, the study finds that cells where the local majority shares the ethnicity with the ruling elite receive 8.7 percent additional road investments and see a 13.8 improvement in road surface quality than otherwise comparable non co-ethnic cells. Exploiting the phased rollout of the Road Sector Development Program between 1997 and 2016, I also document that new roads raise night lights intensity by 0.27 standard deviations in cells benefiting from the program and by 0.51 standard deviations in co-ethnic areas, with larger effects for earlier investments. These findings suggest that ethnic alignment and the availability of large public funds jointly shape the placement of road infrastructure, influencing local economic dynamics.
+      </div>
+    url: "https://www.sciencedirect.com/science/article/pii/S0147596725001003"
+    btn_class: "btn--primary"
+
 
 feature_row1-1:
   - image_path: assets/images/malawi.png
@@ -122,18 +115,19 @@ feature_row1-3:
 
 ---
 
+
 ## Publications
 
 {% include feature_row id="feature_row0-1" type="left" %}
+{% include feature_row id="feature_row1-0" type="left" %}
 <a name="Gifify AWS app"></a>
+
 
 ## Research Pipeline
 
 &nbsp;
 <a name="Signal-Processing">
-{% include feature_row id="feature_row1-0" type="left" %}
 {% include feature_row id="feature_row1-1" type="left" %}
-<a name="Marketing-Analytics"></a>
 
 ## Work in Progress
 
