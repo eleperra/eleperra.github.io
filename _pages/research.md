@@ -40,7 +40,7 @@ feature_row1-0:
     title: "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia"
     text: >
       <div style="font-size: 11px;"> 
-      Perra E. (2026) "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia", WP version <i> Working Papers N. 01/2022 - Economics, Universita' degli Studi di Firenze </i>
+      Perra E. (2024) "Roads to Division: Ethnic Favoritism and Road Infrastructure in Ethiopia", WP version <i> Working Papers N. 01/2022 - Economics, Universita' degli Studi di Firenze </i>
        <br>  <br>
       This paper examines the impact of ethnic favoritism on the allocation of transportation infrastructure in Ethiopia. Analyzing road investments and ethnic composition in 5 Km² grid cells, the study finds that areas predominantly inhabited by the ruling ethnic elite receive 6.8% more road investments and see a 7.5% improvement in pavement quality. Investigating the staggered implementation of the Road Sector Development Program from 1997 to 2016, I explore how road construction influences local economic activity. Nighttime light intensity, indicating higher economic activity, increases by two thirds of a standard deviation in cells benefiting from new roads, with earlier investments yielding higher effects. Notably, economic benefits are more pronounced in areas where the population shares the ethnicity of the ruling elite.
         </div>
