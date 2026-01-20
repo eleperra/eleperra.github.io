@@ -2,7 +2,154 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@charset "utf-8";
+/* Carica il tema (la skin la prende dal tuo _config.yml) */
+@import "minimal-mistakes";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+/* =========================================
+   Elena Perra — Personal palette + overrides
+   Colorato, ma sobrio (no “aqua vibes”)
+   ========================================= */
+
+:root{
+  /* Base */
+  --ep-bg: #fbf7f1;          /* avorio/sabbia: caldo e pulito */
+  --ep-surface: #ffffff;     /* cards/box */
+  --ep-text: #1c2430;        /* blu-notte (più soft del nero) */
+  --ep-muted: #5b6676;       /* testo secondario */
+  --ep-border: rgba(28,36,48,.12);
+
+  /* Accenti (personali) */
+  --ep-accent: #2e5e5a;      /* verde salvia profondo */
+  --ep-accent-2: #b45a3c;    /* terracotta sobria */
+  --ep-accent-3: #2d4f87;    /* blu cartografico */
+
+  /* Dettagli */
+  --ep-link: var(--ep-accent-3);
+  --ep-link-hover: #1f3b66;
+}
+
+/* Background generale: caldo + leggermente “cartografico” */
+html, body{
+  background-color: var(--ep-bg);
+  color: var(--ep-text);
+}
+
+/* Un leggero “paper texture / contour lines” molto discreto */
+body{
+  background-image:
+    radial-gradient(1200px 700px at 10% 0%, rgba(45,79,135,.08), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(180,90,60,.07), transparent 52%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(28,36,48,.028) 0px,
+      rgba(28,36,48,.028) 1px,
+      transparent 1px,
+      transparent 12px
+    );
+  background-attachment: fixed;
+}
+
+/* Link: più “academic” e leggibili */
+a{
+  color: var(--ep-link);
+  text-decoration-thickness: .09em;
+  text-underline-offset: .18em;
+}
+a:hover{
+  color: var(--ep-link-hover);
+}
+
+/* Navbar / masthead: pulita con un tocco personale */
+.masthead{
+  background:
+    linear-gradient(90deg, rgba(46,94,90,.10), rgba(45,79,135,.08), rgba(180,90,60,.08));
+  border-bottom: 1px solid var(--ep-border);
+}
+.greedy-nav{
+  background: transparent;
+}
+.greedy-nav a.site-title,
+.greedy-nav a{
+  color: var(--ep-text);
+}
+.greedy-nav a:hover{
+  color: var(--ep-accent);
+}
+
+/* Area contenuto: più “editorial”, con carta bianca */
+.initial-content .page,
+.page__content,
+.sidebar,
+.archive{
+  color: var(--ep-text);
+}
+
+/* Cards/box: più morbide e coerenti */
+.page__content .notice,
+.page__content .notice--primary,
+.page__content .notice--info,
+.page__content .notice--warning,
+.page__content .notice--success{
+  background: var(--ep-surface);
+  border: 1px solid var(--ep-border);
+  border-left: 6px solid var(--ep-accent);
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(28,36,48,.05);
+}
+
+/* Blockquote: elegante, “paper note” */
+.page__content blockquote{
+  background: rgba(255,255,255,.70);
+  border-left: 6px solid var(--ep-accent-2);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 10px 26px rgba(28,36,48,.05);
+}
+
+/* Titoli: un po’ più carattere */
+.page__content h1, .page__content h2, .page__content h3{
+  letter-spacing: -0.01em;
+}
+.page__content h2{
+  border-bottom: 1px solid var(--ep-border);
+  padding-bottom: .25rem;
+}
+
+/* Bottoni (se li usi): moderni, coerenti */
+.btn, .btn--primary{
+  background: var(--ep-accent);
+  border-color: rgba(0,0,0,0);
+  border-radius: 999px;
+}
+.btn:hover, .btn--primary:hover{
+  filter: brightness(0.95);
+}
+.btn--info{
+  background: var(--ep-accent-3);
+  border-radius: 999px;
+}
+.btn--warning{
+  background: var(--ep-accent-2);
+  border-radius: 999px;
+}
+
+/* Code blocks: leggibili, non “tech neon” */
+pre, code{
+  border-radius: 12px;
+}
+pre{
+  border: 1px solid var(--ep-border);
+  box-shadow: 0 10px 26px rgba(28,36,48,.05);
+}
+
+/* Footer: sobrio ma “firmato” */
+.page__footer{
+  background: rgba(255,255,255,.65);
+  border-top: 1px solid var(--ep-border);
+}
+.page__footer, .page__footer a{
+  color: var(--ep-muted);
+}
+.page__footer a:hover{
+  color: var(--ep-accent);
+}
