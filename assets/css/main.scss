@@ -1,64 +1,203 @@
-/* ==============================
-   Elena Perra — Cartographic skin
-   (loaded AFTER the theme)
-   ============================== */
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+/* Importa la skin scelta nel _config.yml e poi il tema */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'air' }}";
+@import "minimal-mistakes";
+
+/* =====================================================
+   Elena Perra — Cartographic background (NO images)
+   Solo pattern generato via CSS: griglia + isoipse + shade
+   Link sempre scuri + visited più scuri
+   Avatar sempre nitido
+   ===================================================== */
 
 :root{
-  /* Colori più “convincenti”: map-room moderna */
-  --ep-bg: #e6eef8;                 /* blu carta */
-  --ep-surface: rgba(255,255,255,.84);
-  --ep-ink: rgba(8, 24, 52, .14);   /* inchiostro linee */
-  --ep-ink2: rgba(8, 24, 52, .08);
+  /* Base: “cool paper” elegante (niente sabbia) */
+  --ep-bg: #e7effb;
   --ep-text: #0b1524;
+  --ep-muted: #4a5b70;
 
-  /* Link scuri + visited più scuri */
-  --ep-link: #061a3a;
-  --ep-link-visited: #020913;
-  --ep-link-hover: #0b2f66;
-
+  /* Card/superfici (lascia intravedere il pattern sotto) */
+  --ep-surface: rgba(255,255,255,.86);
   --ep-border: rgba(11, 21, 36, .14);
+
+  /* Link: scuri, visited ancora più scuri */
+  --ep-link: #061a3a;
+  --ep-link-hover: #0b2f66;
+  --ep-link-visited: #020913;
+
+  /* Inchiostro cartografico */
+  --ep-ink-major: rgba(8, 20, 44, .12); /* griglia grande */
+  --ep-ink-minor: rgba(8, 20, 44, .06); /* griglia piccola */
+  --ep-ink-cont1: rgba(8, 20, 44, .08); /* isoipse 1 */
+  --ep-ink-cont2: rgba(8, 20, 44, .06); /* isoipse 2 */
+
+  /* “Hillshade” / glow */
+  --ep-shade-navy: rgba(14, 55, 120, .18);
+  --ep-shade-teal: rgba(16, 120, 120, .12);
 }
 
-/* Background “cartina geografica” (reticolo + isoipse + costa) */
+/* Base */
 html, body{
-  background-color: var(--ep-bg) !important;
+  background-color: var(--ep-bg);
   color: var(--ep-text);
 }
 
+/* ===========================
+   BACKGROUND CARTOGRAFICO
+   (solo gradienti CSS)
+   =========================== */
 body{
-  /* SVG tile: grid + contour + coastline */
   background-image:
-    radial-gradient(1100px 760px at 12% 10%, rgba(20,70,140,.16), transparent 62%),
-    radial-gradient(980px 700px at 88% 14%, rgba(16,120,120,.12), transparent 60%),
-    url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='900'%20height='900'%20viewBox='0%200%20900%20900'%3E%3Crect%20width='900'%20height='900'%20fill='none'/%3E%3Cg%20fill='none'%20stroke='%23081834'%3E%3C!--%20minor%20grid%20--%3E%3Cg%20stroke-opacity='.06'%20stroke-width='1'%3E%3Cpath%20d='M0%2025H900M0%2050H900M0%2075H900M0%20100H900M0%20125H900M0%20150H900M0%20175H900M0%20200H900M0%20225H900M0%20250H900M0%20275H900M0%20300H900M0%20325H900M0%20350H900M0%20375H900M0%20400H900M0%20425H900M0%20450H900M0%20475H900M0%20500H900M0%20525H900M0%20550H900M0%20575H900M0%20600H900M0%20625H900M0%20650H900M0%20675H900M0%20700H900M0%20725H900M0%20750H900M0%20775H900M0%20800H900M0%20825H900M0%20850H900M0%20875H900'/%3E%3Cpath%20d='M25%200V900M50%200V900M75%200V900M100%200V900M125%200V900M150%200V900M175%200V900M200%200V900M225%200V900M250%200V900M275%200V900M300%200V900M325%200V900M350%200V900M375%200V900M400%200V900M425%200V900M450%200V900M475%200V900M500%200V900M525%200V900M550%200V900M575%200V900M600%200V900M625%200V900M650%200V900M675%200V900M700%200V900M725%200V900M750%200V900M775%200V900M800%200V900M825%200V900M850%200V900M875%200V900'/%3E%3C/g%3E%3C!--%20major%20grid%20--%3E%3Cg%20stroke-opacity='.12'%20stroke-width='1.2'%3E%3Cpath%20d='M0%20100H900M0%20200H900M0%20300H900M0%20400H900M0%20500H900M0%20600H900M0%20700H900M0%20800H900'/%3E%3Cpath%20d='M100%200V900M200%200V900M300%200V900M400%200V900M500%200V900M600%200V900M700%200V900M800%200V900'/%3E%3C/g%3E%3C!--%20contours%20--%3E%3Cg%20stroke-opacity='.12'%20stroke-width='1.1'%3E%3Cpath%20d='M-60%20240c180-150%20360-150%20540%200s360%20150%20600%200'/%3E%3Cpath%20d='M-80%20310c210-175%20420-175%20630%200s420%20175%20700%200'/%3E%3Cpath%20d='M-60%20380c180-150%20360-150%20540%200s360%20150%20600%200'/%3E%3Cpath%20d='M-80%20450c210-175%20420-175%20630%200s420%20175%20700%200'/%3E%3Cpath%20d='M-60%20520c180-150%20360-150%20540%200s360%20150%20600%200'/%3E%3Cpath%20d='M-80%20590c210-175%20420-175%20630%200s420%20175%20700%200'/%3E%3C/g%3E%3C!--%20coastline%20(stylized)%20--%3E%3Cg%20stroke-opacity='.18'%20stroke-width='2.2'%3E%3Cpath%20d='M110%20635c55-55%20120-75%20200-55%2075%2018%20110%205%20155-35%2050-44%20115-55%20185-20%2078%2039%20118%2033%20185-14%2048-34%20118-40%20175%2010%2052%2046%2090%2052%20150%2026'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: no-repeat, no-repeat, repeat;
-  background-size: auto, auto, 900px 900px;
+    /* Hillshade / glow elegante */
+    radial-gradient(1200px 820px at 12% 10%, var(--ep-shade-navy), transparent 62%),
+    radial-gradient(1050px 760px at 88% 14%, var(--ep-shade-teal), transparent 60%),
+
+    /* Reticolo MAJOR (stile lat/long) */
+    repeating-linear-gradient(
+      0deg,
+      var(--ep-ink-major) 0px,
+      var(--ep-ink-major) 1px,
+      transparent 1px,
+      transparent 160px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--ep-ink-major) 0px,
+      var(--ep-ink-major) 1px,
+      transparent 1px,
+      transparent 160px
+    ),
+
+    /* Reticolo MINOR */
+    repeating-linear-gradient(
+      0deg,
+      var(--ep-ink-minor) 0px,
+      var(--ep-ink-minor) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--ep-ink-minor) 0px,
+      var(--ep-ink-minor) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+
+    /* Isoipse (contour lines) — centro 1 */
+    repeating-radial-gradient(
+      circle at 28% 36%,
+      transparent 0px,
+      transparent 14px,
+      var(--ep-ink-cont1) 14px,
+      var(--ep-ink-cont1) 15px,
+      transparent 15px,
+      transparent 30px
+    ),
+
+    /* Isoipse — centro 2 (per spezzare la “perfezione”) */
+    repeating-radial-gradient(
+      circle at 72% 62%,
+      transparent 0px,
+      transparent 18px,
+      var(--ep-ink-cont2) 18px,
+      var(--ep-ink-cont2) 19px,
+      transparent 19px,
+      transparent 38px
+    );
+
   background-attachment: fixed;
 }
 
-/* Fai “staccare” il contenuto ma lascia vedere la mappa sotto */
+/* ===========================
+   CONTENUTO SU “VETRO CARTA”
+   =========================== */
 .page__content,
 .sidebar__right,
 .archive__item{
   background: var(--ep-surface) !important;
   border: 1px solid var(--ep-border) !important;
   border-radius: 18px;
-  box-shadow: 0 18px 44px rgba(11,21,36,.10);
+  box-shadow: 0 18px 44px rgba(11, 21, 36, .10);
 }
 
-/* Navbar/masthead un filo più “map-room” */
+/* Un filo più respiro */
+.page__content{ padding: 1.15rem; }
+
+/* Masthead con sfumatura coerente */
 .masthead{
-  background: linear-gradient(90deg, rgba(20,70,140,.18), rgba(16,120,120,.12), rgba(160,75,50,.10)) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(14, 55, 120, .18),
+    rgba(16, 120, 120, .12),
+    rgba(160, 75, 50, .08)
+  ) !important;
   border-bottom: 1px solid var(--ep-border) !important;
 }
 .greedy-nav{ background: transparent !important; }
 
-/* Link: sempre scuri, visited più scuri */
-a{ color: var(--ep-link) !important; }
-a:hover, a:focus{ color: var(--ep-link-hover) !important; }
-a:visited{ color: var(--ep-link-visited) !important; }
+/* ===========================
+   LINK: scuri + visited più scuri
+   =========================== */
+a{
+  color: var(--ep-link) !important;
+  text-decoration-thickness: .11em;
+  text-underline-offset: .18em;
+}
+a:hover,
+a:focus{
+  color: var(--ep-link-hover) !important;
+}
+a:visited{
+  color: var(--ep-link-visited) !important;
+}
 
-/* Avatar: SEMPRE nitido (se lo vedi “sfocato”, era CSS) */
+/* Titoli un filo più editorial */
+.page__content h2{
+  border-bottom: 1px solid var(--ep-border);
+  padding-bottom: .25rem;
+  letter-spacing: -0.01em;
+}
+
+/* Blockquote “field note” */
+.page__content blockquote{
+  background: rgba(255,255,255,.78);
+  border-left: 6px solid rgba(16,120,120,.80);
+  border-radius: 14px;
+  box-shadow: 0 14px 34px rgba(11,21,36,.09);
+}
+
+/* Bottoni coerenti */
+.btn, .btn--primary{
+  background: rgba(16,120,120,.95);
+  border-color: transparent;
+  border-radius: 999px;
+}
+.btn--info{
+  background: rgba(14,55,120,.95);
+  border-radius: 999px;
+}
+.btn--warning{
+  background: rgba(160,75,50,.92);
+  border-radius: 999px;
+}
+
+/* Footer */
+.page__footer{
+  background: rgba(255,255,255,.70);
+  border-top: 1px solid var(--ep-border);
+}
+.page__footer, .page__footer a{ color: var(--ep-muted) !important; }
+.page__footer a:hover{ color: rgba(16,120,120,.95) !important; }
+
+/* ===========================
+   AVATAR: sempre a fuoco
+   =========================== */
 .author__avatar img,
 img.avatar{
   filter: none !important;
@@ -67,4 +206,3 @@ img.avatar{
   opacity: 1 !important;
   image-rendering: auto;
 }
-
