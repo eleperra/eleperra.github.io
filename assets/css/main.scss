@@ -4,37 +4,39 @@
 
 @charset "utf-8";
 
-/* Importa la skin scelta nel _config.yml (air, dark, etc.) */
+/* Importa skin scelta nel _config.yml + tema */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'air' }}";
 @import "minimal-mistakes";
 
-/* =========================================
-   Elena Perra — Cartographic (cool paper)
-   Più “map room”, meno sabbia
-   Link più scuri
-   ========================================= */
+/* ===========================
+   Elena Perra — Atlas look
+   =========================== */
 
 :root{
-  /* Base: carta fredda, pulita */
-  --ep-bg: #eef3f9;
+  /* Base “cool paper” */
+  --ep-bg: #edf2fb;          /* sfondo pagina */
   --ep-surface: rgba(255,255,255,.86);
   --ep-text: #0f1722;
-  --ep-muted: #4c5a6b;
-  --ep-border: rgba(15,23,34,.14);
+  --ep-muted: #4a596b;
+  --ep-border: rgba(15,23,34,.16);
 
-  /* Accenti: cartografici e sobri */
-  --ep-navy: #0b2446;     /* link scuri */
-  --ep-navy-2: #06162c;   /* hover ancora più scuro */
-  --ep-teal: #1a5b66;     /* accento */
-  --ep-rust: #9a4a33;     /* rame/terracotta */
+  /* Link super scuri */
+  --ep-link: #071a33;        /* normale */
+  --ep-link-visited: #020a14;/* visited: ancora più scuro */
+  --ep-link-hover: #0b2a55;  /* hover/focus */
 
-  /* Pattern intensity (puoi aumentare se vuoi più “mappa”) */
-  --ep-grid-a: rgba(15,23,34,.055);
-  --ep-grid-b: rgba(15,23,34,.035);
-  --ep-contour: rgba(15,23,34,.05);
+  /* Palette “cartografica” */
+  --ep-navy-glow: rgba(9, 36, 86, .14);
+  --ep-teal-glow: rgba(18, 94, 104, .12);
+  --ep-rust-glow: rgba(150, 74, 51, .10);
+
+  /* Intensità pattern */
+  --ep-grid-major: rgba(15,23,34,.070);
+  --ep-grid-minor: rgba(15,23,34,.040);
+  --ep-contour: rgba(15,23,34,.055);
 }
 
-/* Sfondo: griglia lat/long + contour più evidenti ma eleganti */
+/* Sfondo forte ma elegante: hillshade + griglia + contour */
 html, body{
   background-color: var(--ep-bg);
   color: var(--ep-text);
@@ -42,45 +44,45 @@ html, body{
 
 body{
   background-image:
-    /* hillshade morbido */
-    radial-gradient(1100px 750px at 12% 8%, rgba(11,36,70,.12), transparent 62%),
-    radial-gradient(950px 680px at 88% 12%, rgba(26,91,102,.10), transparent 60%),
+    radial-gradient(1150px 780px at 12% 10%, var(--ep-navy-glow), transparent 62%),
+    radial-gradient(980px 720px at 88% 14%, var(--ep-teal-glow), transparent 60%),
+    radial-gradient(760px 520px at 50% 96%, var(--ep-rust-glow), transparent 55%),
 
-    /* griglia principale (ogni 64px) */
+    /* griglia major (tipo reticolo carta nautica) */
     repeating-linear-gradient(
       0deg,
-      var(--ep-grid-a) 0px,
-      var(--ep-grid-a) 1px,
+      var(--ep-grid-major) 0px,
+      var(--ep-grid-major) 1px,
       transparent 1px,
-      transparent 64px
+      transparent 72px
     ),
     repeating-linear-gradient(
       90deg,
-      var(--ep-grid-a) 0px,
-      var(--ep-grid-a) 1px,
+      var(--ep-grid-major) 0px,
+      var(--ep-grid-major) 1px,
       transparent 1px,
-      transparent 64px
+      transparent 72px
     ),
 
-    /* griglia secondaria (ogni 16px) */
+    /* griglia minor */
     repeating-linear-gradient(
       0deg,
-      var(--ep-grid-b) 0px,
-      var(--ep-grid-b) 1px,
+      var(--ep-grid-minor) 0px,
+      var(--ep-grid-minor) 1px,
       transparent 1px,
-      transparent 16px
+      transparent 18px
     ),
     repeating-linear-gradient(
       90deg,
-      var(--ep-grid-b) 0px,
-      var(--ep-grid-b) 1px,
+      var(--ep-grid-minor) 0px,
+      var(--ep-grid-minor) 1px,
       transparent 1px,
-      transparent 16px
+      transparent 18px
     ),
 
-    /* contour (topo lines) */
+    /* contour (più evidente ma ancora sobrio) */
     repeating-radial-gradient(
-      circle at 28% 38%,
+      circle at 30% 38%,
       var(--ep-contour) 0px,
       var(--ep-contour) 1px,
       transparent 1px,
@@ -90,72 +92,59 @@ body{
   background-attachment: fixed;
 }
 
-/* Link più scuri (come volevi) */
-a{
-  color: var(--ep-navy);
-  text-decoration-thickness: .11em;
-  text-underline-offset: .18em;
-}
-a:hover{
-  color: var(--ep-navy-2);
-}
-
-/* Masthead: “map room band” */
-.masthead{
-  background:
-    linear-gradient(90deg, rgba(11,36,70,.16), rgba(26,91,102,.12), rgba(154,74,51,.10));
-  border-bottom: 1px solid var(--ep-border);
-}
-
-/* Contenuto su “vetro carta” per staccare bene dal pattern */
-.initial-content,
-.page,
-.archive,
-.sidebar,
-.page__footer{
-  background: transparent;
-}
-
+/* Contenuto su “vetro carta” per staccare dal pattern */
 .page__content,
 .sidebar__right,
 .archive__item{
   background: var(--ep-surface);
   border: 1px solid var(--ep-border);
   border-radius: 16px;
-  box-shadow: 0 14px 34px rgba(15,23,34,.08);
+  box-shadow: 0 16px 36px rgba(15,23,34,.09);
 }
 
-/* Spaziatura interna per farlo “editorial” */
-.page__content{
-  padding: 1.2rem;
-}
+/* Un po’ più respiro */
+.page__content{ padding: 1.1rem; }
 
-/* Titoli con un tocco “atlante” */
-.page__content h2{
+/* Masthead: banda “map room” */
+.masthead{
+  background: linear-gradient(90deg,
+    rgba(9, 36, 86, .18),
+    rgba(18, 94, 104, .12),
+    rgba(150, 74, 51, .10)
+  );
   border-bottom: 1px solid var(--ep-border);
-  padding-bottom: .25rem;
+}
+.greedy-nav{ background: transparent; }
+
+/* LINK: sempre scuri + visited ancora più scuri */
+a{
+  color: var(--ep-link);
+  text-decoration-thickness: .11em;
+  text-underline-offset: .18em;
+}
+a:hover,
+a:focus{
+  color: var(--ep-link-hover);
+}
+a:visited{
+  color: var(--ep-link-visited);
 }
 
-/* Blockquote: nota di campo */
+/* Blockquote: “nota di campo” */
 .page__content blockquote{
-  background: rgba(255,255,255,.75);
-  border-left: 6px solid var(--ep-teal);
+  background: rgba(255,255,255,.76);
+  border-left: 6px solid rgba(18, 94, 104, .85);
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(15,23,34,.07);
+  box-shadow: 0 14px 32px rgba(15,23,34,.08);
 }
 
-/* Bottoni coerenti */
-.btn, .btn--primary{
-  background: var(--ep-teal);
-  border-color: transparent;
-  border-radius: 999px;
+/* Avatar: sfocato di default (si sblocca con JS sotto) */
+.author__avatar img{
+  filter: blur(7px) saturate(0.95) contrast(1.05);
+  transition: filter .25s ease, transform .25s ease;
+  will-change: filter;
 }
-.btn--warning{ background: var(--ep-rust); border-radius: 999px; }
+.author__avatar img.is-revealed{
+  filter: none;
+}
 
-/* Footer sobrio */
-.page__footer{
-  background: rgba(255,255,255,.65);
-  border-top: 1px solid var(--ep-border);
-}
-.page__footer, .page__footer a{ color: var(--ep-muted); }
-.page__footer a:hover{ color: var(--ep-teal); }
