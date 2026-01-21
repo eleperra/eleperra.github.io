@@ -9,50 +9,54 @@
 @import "minimal-mistakes";
 
 /* =====================================================
-   Elena Perra — Warm Atlas (NO images)
-   Pattern cartografico: griglia + isoipse (solo gradienti)
-   Link scuri + visited più scuri
-   Underline/“barra” icone NON celeste
-   Bottoni coerenti
-   Avatar sempre nitido
+   Elena Perra — Geologic / Seismic Atlas (NO images)
+   Pattern: isoipse + tracce sismiche + reticolo
+   Palette: stone/cool-grey + ink + olive + amber
+   Nav underline: coerente (non celeste)
+   Avatar: mai sfocato
    ===================================================== */
 
 :root{
-  /* Base “carta” calda (no celeste) */
-  --ep-bg: #f2eee6;            /* greige caldo */
-  --ep-text: #141b24;          /* quasi-inchiostro */
-  --ep-muted: #5a6675;
+  /* Base (meno beige): stone / cool-grey */
+  --ep-bg: #e9ecef;                 /* sfondo pagina */
+  --ep-text: #121a24;               /* inchiostro */
+  --ep-muted: #556372;
 
-  /* Superfici (meno bianco puro) */
-  --ep-surface: rgba(250, 246, 238, .88);
-  --ep-border: rgba(20, 27, 36, .16);
+  /* Superfici (non bianco puro) */
+  --ep-surface: rgba(248, 247, 244, .88);
+  --ep-border: rgba(18, 26, 36, .16);
 
-  /* Link: scuri */
-  --ep-link: #1a2230;
-  --ep-link-hover: #0f1a28;
-  --ep-link-visited: #070c12;
+  /* Palette coerente */
+  --ep-ink: #121a24;                /* inchiostro scuro */
+  --ep-olive: rgba(63, 88, 70, .95);
+  --ep-amber: rgba(172, 118, 44, .95);
 
-  /* Underline coerente (niente azzurri) */
-  --ep-underline: rgba(20, 27, 36, .55);          /* inchiostro */
-  --ep-underline-hover: rgba(70, 92, 72, .85);    /* oliva */
-  --ep-underline-active: rgba(176, 122, 48, .85); /* ambra */
+  /* Link */
+  --ep-link: #141f2b;
+  --ep-link-hover: #0e1823;
+  --ep-link-visited: #070b10;
 
-  /* “Inchiostro” pattern */
-  --ep-ink-major: rgba(20, 27, 36, .14); /* griglia grande */
-  --ep-ink-minor: rgba(20, 27, 36, .07); /* griglia piccola */
-  --ep-ink-cont1: rgba(20, 27, 36, .09); /* isoipse 1 */
-  --ep-ink-cont2: rgba(20, 27, 36, .07); /* isoipse 2 */
+  /* Underline/“barretta” (menu + link + icone) */
+  --ep-underline: rgba(18, 26, 36, .55);        /* default */
+  --ep-underline-hover: rgba(63, 88, 70, .85);  /* oliva */
+  --ep-underline-active: rgba(172, 118, 44, .85);/* ambra */
 
-  /* Ombreggiature calde */
-  --ep-shade-amber: rgba(176, 122, 48, .14); /* ambra */
-  --ep-shade-olive: rgba(70, 92, 72, .10);   /* oliva */
-  --ep-shade-ink: rgba(26, 34, 48, .08);     /* inchiostro soft */
+  /* Pattern ink */
+  --ep-grid-major: rgba(18, 26, 36, .12);
+  --ep-grid-minor: rgba(18, 26, 36, .06);
 
-  /* Bottoni */
-  --ep-btn-ink: rgba(26, 34, 48, .96);       /* inchiostro */
-  --ep-btn-olive: rgba(70, 92, 72, .96);     /* oliva */
-  --ep-btn-amber: rgba(176, 122, 48, .96);   /* ambra */
-  --ep-btn-text: rgba(250, 246, 238, .98);   /* avorio */
+  /* Isoipse */
+  --ep-contour-1: rgba(18, 26, 36, .08);
+  --ep-contour-2: rgba(18, 26, 36, .06);
+
+  /* Tracce “sismiche/geologiche” (linee spezzate/diagonali leggere) */
+  --ep-seis-1: rgba(18, 26, 36, .07);
+  --ep-seis-2: rgba(18, 26, 36, .05);
+
+  /* Glow “lab map-room” (non azzurro) */
+  --ep-glow-1: rgba(63, 88, 70, .12);   /* oliva soft */
+  --ep-glow-2: rgba(172, 118, 44, .10); /* ambra soft */
+  --ep-glow-3: rgba(18, 26, 36, .07);   /* ink soft */
 }
 
 /* Base */
@@ -61,104 +65,128 @@ html, body{
   color: var(--ep-text);
 }
 
-/* ===========================
-   BACKGROUND CARTOGRAFICO
-   (solo gradienti CSS)
-   =========================== */
+/* =====================================================
+   BACKGROUND GEOLOGICO/SISMICO (solo gradienti)
+   - glow caldo sobrio
+   - reticolo (major/minor)
+   - isoipse (2 centri)
+   - “seismic traces” diagonali a tratti
+   ===================================================== */
 body{
   background-image:
-    /* glow caldo “map-room” */
-    radial-gradient(1200px 820px at 10% 12%, var(--ep-shade-amber), transparent 62%),
-    radial-gradient(1050px 760px at 90% 16%, var(--ep-shade-olive), transparent 60%),
-    radial-gradient(820px 520px at 50% 98%, var(--ep-shade-ink), transparent 58%),
+    /* glow */
+    radial-gradient(1200px 820px at 12% 12%, var(--ep-glow-1), transparent 62%),
+    radial-gradient(1050px 760px at 88% 16%, var(--ep-glow-2), transparent 60%),
+    radial-gradient(860px 560px at 52% 98%, var(--ep-glow-3), transparent 58%),
 
-    /* Reticolo MAJOR */
+    /* reticolo MAJOR */
     repeating-linear-gradient(
       0deg,
-      var(--ep-ink-major) 0px,
-      var(--ep-ink-major) 1px,
+      var(--ep-grid-major) 0px,
+      var(--ep-grid-major) 1px,
       transparent 1px,
-      transparent 170px
+      transparent 190px
     ),
     repeating-linear-gradient(
       90deg,
-      var(--ep-ink-major) 0px,
-      var(--ep-ink-major) 1px,
+      var(--ep-grid-major) 0px,
+      var(--ep-grid-major) 1px,
       transparent 1px,
-      transparent 170px
+      transparent 190px
     ),
 
-    /* Reticolo MINOR */
+    /* reticolo MINOR */
     repeating-linear-gradient(
       0deg,
-      var(--ep-ink-minor) 0px,
-      var(--ep-ink-minor) 1px,
+      var(--ep-grid-minor) 0px,
+      var(--ep-grid-minor) 1px,
       transparent 1px,
-      transparent 42px
+      transparent 38px
     ),
     repeating-linear-gradient(
       90deg,
-      var(--ep-ink-minor) 0px,
-      var(--ep-ink-minor) 1px,
+      var(--ep-grid-minor) 0px,
+      var(--ep-grid-minor) 1px,
       transparent 1px,
-      transparent 42px
+      transparent 38px
     ),
 
-    /* Isoipse (contour) — centro 1 */
+    /* isoipse (centro 1) */
     repeating-radial-gradient(
-      circle at 30% 36%,
+      circle at 28% 36%,
       transparent 0px,
-      transparent 15px,
-      var(--ep-ink-cont1) 15px,
-      var(--ep-ink-cont1) 16px,
-      transparent 16px,
-      transparent 32px
+      transparent 13px,
+      var(--ep-contour-1) 13px,
+      var(--ep-contour-1) 14px,
+      transparent 14px,
+      transparent 28px
     ),
 
-    /* Isoipse — centro 2 (variazione) */
+    /* isoipse (centro 2) */
     repeating-radial-gradient(
       circle at 72% 62%,
       transparent 0px,
-      transparent 19px,
-      var(--ep-ink-cont2) 19px,
-      var(--ep-ink-cont2) 20px,
-      transparent 20px,
-      transparent 40px
+      transparent 17px,
+      var(--ep-contour-2) 17px,
+      var(--ep-contour-2) 18px,
+      transparent 18px,
+      transparent 36px
+    ),
+
+    /* seismic traces 1 (diagonali a tratti) */
+    repeating-linear-gradient(
+      135deg,
+      transparent 0px,
+      transparent 10px,
+      var(--ep-seis-1) 10px,
+      var(--ep-seis-1) 11px,
+      transparent 11px,
+      transparent 22px
+    ),
+
+    /* seismic traces 2 (secondo set per irregolarità) */
+    repeating-linear-gradient(
+      45deg,
+      transparent 0px,
+      transparent 14px,
+      var(--ep-seis-2) 14px,
+      var(--ep-seis-2) 15px,
+      transparent 15px,
+      transparent 34px
     );
 
   background-attachment: fixed;
 }
 
-/* ===========================
-   CONTENUTO SU “CARTA”
-   =========================== */
+/* =====================================================
+   CONTENUTO su “carta” (lascia intravedere il pattern)
+   ===================================================== */
 .page__content,
 .sidebar__right,
 .archive__item{
   background: var(--ep-surface) !important;
   border: 1px solid var(--ep-border) !important;
   border-radius: 18px;
-  box-shadow: 0 18px 44px rgba(20, 27, 36, .10);
+  box-shadow: 0 18px 44px rgba(18, 26, 36, .10);
 }
 
-/* Respiro */
 .page__content{ padding: 1.15rem; }
 
-/* Masthead: banda sobria calda */
+/* Masthead coerente */
 .masthead{
   background: linear-gradient(
     90deg,
-    rgba(176, 122, 48, .16),
-    rgba(70, 92, 72, .12),
-    rgba(26, 34, 48, .10)
+    rgba(63, 88, 70, .14),
+    rgba(172, 118, 44, .10),
+    rgba(18, 26, 36, .08)
   ) !important;
   border-bottom: 1px solid var(--ep-border) !important;
 }
 .greedy-nav{ background: transparent !important; }
 
-/* ===========================
-   LINK + UNDERLINE (icone incluse)
-   =========================== */
+/* =====================================================
+   LINK + underline coerente (niente celeste)
+   ===================================================== */
 a{
   color: var(--ep-link) !important;
   text-decoration-thickness: .11em;
@@ -166,7 +194,7 @@ a{
   text-decoration-color: var(--ep-underline) !important;
 }
 
-/* elimina underline “finto” celeste del tema */
+/* rimuove l’underline “finto” azzurrino del tema */
 a,
 .author__urls a,
 .page__content a,
@@ -174,8 +202,7 @@ a,
   box-shadow: none !important;
 }
 
-a:hover,
-a:focus{
+a:hover, a:focus{
   color: var(--ep-link-hover) !important;
   text-decoration-color: var(--ep-underline-hover) !important;
 }
@@ -186,114 +213,68 @@ a:active{
 
 a:visited{
   color: var(--ep-link-visited) !important;
-  text-decoration-color: rgba(20, 27, 36, .70) !important;
+  text-decoration-color: rgba(18, 26, 36, .70) !important;
 }
 
-/* specifico per le icone social in sidebar */
-.author__urls a,
-.author__urls a:visited{
-  color: var(--ep-link) !important;
-  text-decoration-color: var(--ep-underline) !important;
-}
-.author__urls a:hover,
-.author__urls a:focus{
-  text-decoration-color: var(--ep-underline-hover) !important;
-}
-.author__urls a:active{
-  text-decoration-color: var(--ep-underline-active) !important;
+/* =====================================================
+   MENU “barrette” (Conferences, CV, etc.) NON celesti
+   - hover: oliva
+   - pagina attiva: ambra (o oliva se preferisci)
+   ===================================================== */
+
+/* disattiva eventuale evidenziazione blu del tema */
+.greedy-nav .visible-links a{
+  box-shadow: none !important;
 }
 
-/* Titoli */
-.page__content h2{
-  border-bottom: 1px solid var(--ep-border);
-  padding-bottom: .25rem;
+/* hover/focus nel menu */
+.greedy-nav .visible-links a:hover,
+.greedy-nav .visible-links a:focus{
+  box-shadow: inset 0 -3px 0 var(--ep-underline-hover) !important;
 }
 
-/* Blockquote */
-.page__content blockquote{
-  background: rgba(250, 246, 238, .86);
-  border-left: 6px solid rgba(70, 92, 72, .80);
-  border-radius: 14px;
-  box-shadow: 0 14px 34px rgba(20, 27, 36, .09);
+/* pagina corrente (varie implementazioni possibili nel tema) */
+.greedy-nav .visible-links li.active a,
+.greedy-nav .visible-links a[aria-current="page"],
+.greedy-nav .visible-links a.active{
+  box-shadow: inset 0 -3px 0 var(--ep-underline-active) !important;
 }
 
-/* ===========================
-   BOTTONI (paper: “Learn more” ecc.)
-   =========================== */
+/* anche per la nav laterale, se presente */
+.nav__list .active > a{
+  box-shadow: inset 0 -3px 0 var(--ep-underline-active) !important;
+}
+
+/* =====================================================
+   BOTTONI (paper: “Learn more” ecc.) coerenti
+   ===================================================== */
 .btn,
 a.btn{
-  background: var(--ep-btn-olive) !important;
-  border: 1px solid rgba(20, 27, 36, .18) !important;
-  color: var(--ep-btn-text) !important;
+  background: var(--ep-olive) !important;
+  border: 1px solid rgba(18, 26, 36, .18) !important;
+  color: rgba(248, 247, 244, .98) !important;
   border-radius: 999px !important;
   text-decoration: none !important;
-  box-shadow: 0 10px 24px rgba(20,27,36,.14) !important;
+  box-shadow: 0 10px 24px rgba(18,26,36,.14) !important;
 }
 
-.btn:hover,
-a.btn:hover{
-  background: var(--ep-btn-ink) !important;
+.btn:hover, a.btn:hover{
+  background: rgba(18, 26, 36, .95) !important;
   transform: translateY(-1px);
 }
-
-.btn:active,
-a.btn:active{
-  background: var(--ep-btn-amber) !important;
+.btn:active, a.btn:active{
+  background: var(--ep-amber) !important;
   transform: translateY(0);
 }
 
-.btn--primary{
-  background: var(--ep-btn-olive) !important;
-  color: var(--ep-btn-text) !important;
-}
-.btn--info{
-  background: var(--ep-btn-ink) !important;
-  color: var(--ep-btn-text) !important;
-}
-.btn--warning{
-  background: var(--ep-btn-amber) !important;
-  color: var(--ep-btn-text) !important;
-}
-.btn--small{
-  padding: .45em .95em !important;
-  font-weight: 600;
-}
+.btn--primary{ background: var(--ep-olive) !important; }
+.btn--info{ background: rgba(18, 26, 36, .95) !important; }
+.btn--warning{ background: var(--ep-amber) !important; }
+.btn--small{ padding: .45em .95em !important; font-weight: 600; }
 
-/* Copre anche classi “read more/learn more” se presenti */
-a.button,
-a.more-link,
-a.read-more{
-  background: var(--ep-btn-olive) !important;
-  color: var(--ep-btn-text) !important;
-  border-radius: 999px !important;
-  padding: .45em .95em !important;
-  text-decoration: none !important;
-  box-shadow: 0 10px 24px rgba(20,27,36,.14) !important;
-  border: 1px solid rgba(20, 27, 36, .18) !important;
-}
-a.button:hover,
-a.more-link:hover,
-a.read-more:hover{
-  background: var(--ep-btn-ink) !important;
-}
-a.button:active,
-a.more-link:active,
-a.read-more:active{
-  background: var(--ep-btn-amber) !important;
-}
-
-/* Footer */
-.page__footer{
-  background: rgba(250, 246, 238, .78);
-  border-top: 1px solid var(--ep-border);
-}
-.page__footer, .page__footer a{ color: var(--ep-muted) !important; }
-.page__footer a:hover{ color: rgba(70, 92, 72, .95) !important; }
-
-/* ===========================
-   AVATAR: sempre NITIDO
-   (annulla blur/blur-up/lazyload)
-   =========================== */
+/* =====================================================
+   AVATAR: MAI sfocato (forzato contro blur-up/lazyload)
+   ===================================================== */
 .author__avatar img,
 .author__avatar img.lazyload,
 .author__avatar img.lazyloaded,
